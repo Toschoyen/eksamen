@@ -1,22 +1,31 @@
 /* Hovedside Start */
-<kode her>
+
 /* Felles Slutt */
 
 /* Hovedside Start */
-<kode her>
+
 /* Hovedside Slutt */
 
 
 /* Underside - Kapell Start */
- <kode her>
+body {
+    margin: 0;
+    overflow: hidden; /*forhindre scroll i parent */
+}
+ h2 {
+    color: #BF6B04;
+    font-family: 'Open Sans'; 
+ }
+
+
 /* Underside - Kapell Slutt */
 
 
 /* Underside - Kasino Start */
-<kode her>
+
 /* Underside - Kasino Slutt */
 
 
 /* Underside - Show Start */
-<kode her>
+
 /* Hovedside Slutt */
