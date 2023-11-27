@@ -1,9 +1,23 @@
-/* Hovedside Start */
-<kode her>
-/* Felles Slutt */
+/* Body start */
+.body {
+    display: flex;
+    width: vh;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* Body end */
 
 /* Hovedside Start */
-<kode her>
+.hero-section-kontainer {
+    display: flex;
+    height: 800px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    background: url(/images/Hovedside-hero-section-background-image.jpg), lightgray 50% / cover no-repeat;
+    background-size: cover;
+}
 /* Hovedside Slutt */
 
 
