@@ -13,19 +13,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start; 
-
-
   margin: 0;
   padding: 0;
   width: 100%;
   font-size: 16px;
   box-sizing: border-box;
   height: 100vh;
+  /*cursor: url('diamond-ring.png'), auto; */
 
 }
 
-
-
+/* End Body */
 
 
 h1,
@@ -92,7 +90,17 @@ nav a:hover{
   }
 }
 
-/* section 1: intro Wedding*/
+.hero-section-container {
+  display: flex;
+  flex-direction: column; 
+  background-color:#4158d9;
+  background-size: cover; 
+  background-position: bottom;
+  background-repeat: no-repeat;
+ 
+}
+
+/* section 1: HERO Wedding*/
 .flex-item {
   display: flex;
   justify-content: center;
@@ -152,7 +160,6 @@ nav a:hover{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 100px; 
   background: radial-gradient(ellipse at top, #BF6B04, white);
   
 } 
@@ -162,16 +169,26 @@ nav a:hover{
   border: 2px solid #BF6B04;
   padding: 20px; 
   margin-left: 50px;
+  border-radius: 3%;
+  transition-property: border-color, box-shadow; 
+  transition-duration: 0.3s;
+  
 }
 
+.text-container:hover{
+  border-color: #ffd700; /* Byt färgen när musen är över textrutan */
+  box-shadow: 0 0 20px #ffd700;
+  
 
-
-
+}
 .section-img1 {
   width: 30%;
   height: auto;
   margin-right: 100px;
   border-radius: 5%; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
 }
 
 /* Button in several sections */
@@ -203,11 +220,19 @@ button {
 }
 
 .box {
+  position: relative;
   width: 30%;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
   text-align: center; 
+  transition-property: border-color, box-shadow;
+  transition-duration: 0.3s;
+}
+
+.box:hover{
+  border-color:#BF6B04;
+  box-shadow: 0 0 20px #BF6B04;
 }
 
 .box img {
@@ -218,6 +243,15 @@ button {
 
 .box h2 {
   margin-bottom: 10px;
+
+}
+
+.box h2, .box p, .box button{ 
+  opacity: 0;
+  transition: opacity 0.3s; 
+}
+.box:hover h2, .box:hover p, .box:hover button {
+  opacity: 1; /* Visa texten när musen är över boxen */
 }
 
 /* section 4: picture with info */
