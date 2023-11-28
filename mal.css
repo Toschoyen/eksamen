@@ -9,20 +9,26 @@
     padding: 0;
 }
 /* Body end */
-
 /* Hovedside Start */
 nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Change the direction to row */
+    align-items: center; /* Center the items vertically */
+    justify-content: flex-start;
+    padding-left: 50px;
 } 
 .logo {
+    display: flex;
+    align-items: center;
+    padding-right: 200px;
 }
   nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex: 1; /* Expand the ul element to take the available space */
 } 
   nav li {
     margin: 0 10px;
@@ -38,13 +44,27 @@ nav a {
   nav a:hover {
     background-color: #555;
 }
+@media only screen and (max-width: 967px) {
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding-left: 0;
+    } 
+    nav li {
+      font-size: 24px; /*endrer størrelse for å unngå forflytting av logo */
+    } 
+    .logo {
+      padding-right: 10px;
+    }
+  }
 .hero-section-kontainer {
     display: flex;
     flex-direction: column;
-    background-image: url("images/Hovedside-hero-section-background-image.jpg");
-    background-size: cover;
+    background-image: url("images/Hovedside-hero-section-background-image-fz.jpg");
+    background-size:cover;
+    background-position: bottom;
     background-repeat: no-repeat;
-    height: 600px; /* Replace with the actual height of the background image */
+    height: 800px; /* Replace with the actual height of the background image */
 }
 .hero-title {
     color: #FFF;
@@ -53,10 +73,11 @@ nav a {
     font-style: normal;
     font-weight: 400;
     margin-top: auto; /* Flytter div'en til bunnen i forhold til flex-konteineren */
-    margin-bottom: -40px;
+    margin-bottom: -30px;
+}
+.main-features {
     
 }
-
 
 /* Hovedside Slutt */
 
