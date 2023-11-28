@@ -44,16 +44,17 @@ p {
 /* Show | section 1: intro of the show page */
 .hero-div {
   position: relative;
-  width: 100%;
-  
+  width: 100%;  
 }
 
 .hero-img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
 }
 
-.overlay {
+.hero-div::before {
+  content:'';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -66,13 +67,13 @@ p {
 
 .hero-text-div {
   position: absolute;
-  z-index: 2;
   color: #f4f4f4;
   width: 70%;
-  top: 35%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   text-align: center;
+  width: 80%;
 }
 
 .hero-text-div h1 {
@@ -91,6 +92,7 @@ p {
   margin: 0 auto;
   margin-top: 3rem;
   width: 15rem;
+  display: block;
 }
 
 /* button basic styling & hover */
@@ -111,7 +113,7 @@ p {
 
 .btn:after {
   position: absolute;
-  content:"";
+  content:'';
   width:0;
   height: 100%;
   top:0;
@@ -144,61 +146,90 @@ p {
   top:2px;
 }
 
+.btn-secondary {
+  display: block;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border: 2px solid #bf6b04;
+  text-align: center;
+  color: #bf6b04 ;
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  border-radius: 3em;
+  position:relative;
+}
+
+.btn-secondary:hover{
+  background-color: #935203;
+  color: #f4f4f4;
+  border: none;
+}
+
 /* Show | section 2 : top 3 shows */
 .section2-div {
   width: 100%;
-  height: auto;
+  /* height: auto; */
   background-color: #F20505;
+  margin-top: 2rem;
 }
 
 
 .section2-div-text{
   padding-top: 1rem;
-  padding-left: 3rem;
+  padding-left: 4rem;
 }
 
 .section2-div-text h1{
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .section2-div-text p{
-  font-size: 1.2rem;
-  margin-bottom:-0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: -0.5rem;
 }
 
-.section2-shows-div {
+.section2-shows-cards-div {
   justify-content: space-around;
   padding: 2rem;
   padding-bottom: 3rem;
   max-height: 100%; 
 }
 
-.show-div {
+.show-card-div {
   width: 30%;
   background-color: #0476D9;
   border-radius: 20px;
+  overflow:hidden;
 }
 
-.show-div img {
+.show-card-div img {
   width: 100%;
+  height: auto;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  transition: transform 0.8s ease;
 }
 
-.show-div-text {
+.show-card-div:hover img {
+  transform: scale(1.1);
+}
+
+.show-card-div-text {
   margin-bottom: 1.5rem;
 }
-.show-div-text h3{
+
+.show-card-div-text h3{
   text-align: center;
   margin-top: 1.5rem;
  }
 
-.show-div-text p{
+.show-card-div-text p{
   margin-left: 1.5rem;
   margin-right: 1.5rem;
  }
 
-.show-div .btn {
+.show-card-div .btn {
   max-width: 50%;
   left: 50%;
   transform: translateX(-50%);
@@ -209,38 +240,82 @@ p {
   margin-top: 2rem;
   margin-bottom: 2rem;
   position: relative;
+  width: 100%;
 }
 
 .section3-div img{
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.section3-div::before {
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .section3-text-div{
   position:absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   color:#f4f4f4;
   text-align: center;
+  width: 80%;
 }
 
-.section3-text-div h2{
-  font-size: 2.5rem;
+.section3-text-div h1{
+  font-size: 3rem;
+  margin-bottom: 30px;
 }
 
 .section3-text-div .btn{
  width: 15rem;
- left: 50%;
- transform: translateX(-50%);
- margin-top: 4rem;
+ display: block;
+ margin: 0 auto;
 }
 
 /* Show | Section 4 */
+.section4-div h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.section4-div p{
+  font-size: 1.5rem;
+  padding: 0 2rem;
+}
+
 /* Show | Section 5 */
 .section5-div {
   background-color: #F5F5F5;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem; 
+  justify-content: space-around;
 }
+.section5-div p {
+ width: 50%;
+ font-size: 1.5rem;
+ padding-right: 1.5rem;
+}
+
+.section5-btns-div {
+  flex-wrap: wrap;
+  width: 30%;
+}
+
+.section5-btns-div > * {
+  width: 15rem;
+  margin: 0.5rem;
+}
+
 /* Footer : denne delen bygget av Elin */
 .Footer {
   width: 100%;
@@ -291,4 +366,5 @@ p {
   padding-top: 10px;
   text-align: center;
 }
+
 /* Underside - Show Slutt */
