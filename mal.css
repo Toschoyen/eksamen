@@ -8,23 +8,25 @@
 
 
 /* Underside - Kapell Start */
-
+/* Start Body */
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+
+
   margin: 0;
   padding: 0;
   width: 100%;
   font-size: 16px;
   box-sizing: border-box;
-  height: 100%;
+  height: 100vh;
 
 }
-.page-container {
-  height: 100%;
-  background: radial-gradient(ellipse at top, #BF6B04, white);
-  display: flex; 
-  flex-direction: column;
 
-}
+
+
+
 
 h1,
 p {
@@ -35,7 +37,6 @@ p {
 p {
  font-size: 30px;
  
-
 }
 
 h2 {
@@ -47,7 +48,51 @@ h2,
 p {
   font-family: 'Open Sans';
 }
+/* Navigation */
+nav {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: flex-start; 
+  padding-left: 200px; 
+}
 
+.logo {
+  margin-right: auto;  
+  padding-right: 20px; 
+}
+
+nav li {
+  margin: 0 10px; 
+  font-size: 34px; 
+}
+
+nav a {
+  display: block; 
+  color: white; 
+  text-decoration: none; 
+  padding: 10px; 
+  transition: 0.5s ease; 
+}
+
+nav a:hover{
+  background-color: #555;
+}
+@media only screen and (max-width: 967px) {
+  nav ul {
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    padding-left: 0; 
+  }
+  nav li {
+    font-size: 24px; 
+  }
+  .logo {
+    padding-right: 10px; 
+  }
+}
+
+/* section 1: intro Wedding*/
 .flex-item {
   display: flex;
   justify-content: center;
@@ -58,7 +103,6 @@ p {
   flex-direction: column;
 }
 
-/* section 1: intro Wedding*/
 .hero-div {
   position: relative;
   width: 100%;
@@ -109,6 +153,7 @@ p {
   justify-content: space-between;
   align-items: center;
   margin-top: 100px; 
+  background: radial-gradient(ellipse at top, #BF6B04, white);
   
 } 
 
