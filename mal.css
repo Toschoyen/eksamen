@@ -9,17 +9,56 @@
     padding: 0;
 }
 /* Body end */
+
 /* Hovedside Start */
+nav {
+    display: flex;
+    flex-direction: column;
+} 
+.logo {
+    width: 100%;
+}
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+} 
+  nav li {
+    margin: 0 10px;
+    font-size: 34px;
+} 
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.5s ease;
+}
+  nav a:hover {
+    background-color: #555;
+}
 .hero-section-kontainer {
     display: flex;
-    height: 500px
-    padding: 10px;
     flex-direction: column;
-    align-items: center;
-    align-self: stretch;
-    background: url(/);
+    background-image: url("images/Hovedside-hero-section-background-image.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px; /* Replace with the actual height of the background image */
 }
+.hero-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: auto; /* Flytter div'en til bunnen i forhold til flex-konteineren */
+    margin-bottom: -40px;
+    
+}
+
+
 /* Hovedside Slutt */
 
 
