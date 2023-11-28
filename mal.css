@@ -77,10 +77,10 @@ nav a {
 }
 .main-features {
     display: flex;
-    padding: 20px 10px;
+    padding: 40px 10px;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 100%;
     background: linear-gradient(180deg, #BF6B04 0%, rgba(191, 107, 4, 0.00) 100%);
 }
    /* Konteiner for flipkortene */
@@ -195,6 +195,9 @@ https://www.youtube.com/watch?v=NCLdf661ILE&t=6s*/
 /* Flipkort forsidebilder start */
   #flipcard-1 {
     background-image: url('/images/flipcard-poker.jpg');
+  }
+  #flipcard-2 {
+    background-image: url('/images/flipcard-bryllupskapell.jpg');
   }
 /* Flipkort forsidebilder slutt */
 /* Hovedside Slutt */
