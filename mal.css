@@ -202,26 +202,56 @@
       background-image: url('/images/flipcard-shows.jpg');
     }
   /* Flipkort forsidebilder slutt */
-  .location {
+  .location, .general {
     display: flex;
     flex-direction: row;
+    Align-items: center;
     justify-content: flex-center;
     height: 100%;
-    background: #BF6B04;
     padding: 30px 80px;
+  }
+  .location {
+    background: #BF6B04;
   }
   .location-text, p {
     color: #FFF;
-    font-size: 24px;
-    flex: 1;
+    font-size: 36px;
+    flex: 5;
+    padding-left: 10px;
     padding-right: 10px;
   }
   .location-imagecontainer {
-    width: 383px; /* Adjust the width as needed */
-    height: auto; /* Maintain the aspect ratio */
-    flex: 1; /* Add flex: 1 to make it share 50% width */
+    flex: 5; /* Add flex: 1 to make it share 50% width */
+  }
+  .location-imagecontainer img {
+    width: 100%; /* dekker hele rommet */
+    height: 100%; /* Bidlet følger komprimeringen */
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.40);
+  }
+  .general {
+    background: linear-gradient(180deg, #BF6B04 0%, rgba(191, 107, 4, 0.47) 53.65%, rgba(191, 107, 4, 0.00) 100%);
+  }
+  .general-imagecontainer {
+    flex: 5; /* Add flex: 1 to make it share 50% width */
+    padding-left: 50px;
+  }
+  .general-imagecontainer img {
+    width: 100%; /* dekker hele rommet */
+    height: 100%; /* Bidlet følger komprimeringen */
+  }
+  .general-info {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .info-column {
+    display: flex;
+    flex-direction: row;
+  }
+  .info-column img {
+    width: 100px;
+    height: 20%;
   }
 /* Hovedside Slutt */
 /* Underside - Kapell Start */
