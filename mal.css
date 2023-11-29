@@ -25,7 +25,7 @@ body {
 
 /* End Body */
 
-
+/*font */
 h1,
 p {
   line-height: 1.5;
@@ -175,7 +175,7 @@ nav a:hover{
   
 }
 
-.text-container:hover{
+.text-container:hover {
   border-color: #ffd700; /* Byt färgen när musen är över textrutan */
   box-shadow: 0 0 20px #ffd700;
   
@@ -184,12 +184,11 @@ nav a:hover{
 .section-img1 {
   width: 30%;
   height: auto;
-  margin-right: 100px;
+  margin-right: 200px;
   border-radius: 5%; 
   padding-top: 20px;
   padding-bottom: 20px;
-  
-}
+} 
 
 /* Button in several sections */
 button {
@@ -277,22 +276,24 @@ button {
   text-align: center;
 }
 
-
-
  /* Footer: denne delen bygget av Elin */
 .Footer {
   width: 100%;
   background: #4158d9;
   color: #f4f4f4;
-  padding: 0 2rem;
-  padding-bottom: 2rem;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 0;
   font-size: 1.2rem;
   font-weight: bold;
 }
 
 .footer-ul-nav {
   padding: 0 3rem;
+  display: flex; 
+  justify-content: center; 
 }
+
 .footer-ul {
   list-style-type: none;
   margin: 0;
