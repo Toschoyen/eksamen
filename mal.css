@@ -10,17 +10,15 @@
 /* Underside - Kapell Start */
 /* Start Body */
 body {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start; 
   margin: 0;
   padding: 0;
   width: 100%;
-  font-size: 16px;
   box-sizing: border-box;
-  height: 100vh;
-  /*cursor: url('diamond-ring.png'), auto; */
-
+  
 }
 
 /* End Body */
@@ -161,6 +159,7 @@ nav a:hover{
   justify-content: space-between;
   align-items: center;
   background: radial-gradient(ellipse at top, #BF6B04, white);
+  padding: 40px;
   
 } 
 
@@ -182,13 +181,18 @@ nav a:hover{
 
 }
 .section-img1 {
-  width: 30%;
+  width: 20%;
   height: auto;
   margin-right: 200px;
   border-radius: 5%; 
   padding-top: 20px;
   padding-bottom: 20px;
+  transition: transform 0.8s ease;
 } 
+
+.section-img1:hover {
+  transform: scale(1.1);
+}
 
 /* Button in several sections */
 button {
@@ -242,7 +246,6 @@ button {
 
 .box h2 {
   margin-bottom: 10px;
-
 }
 
 .box h2, .box p, .box button{ 
@@ -256,23 +259,23 @@ button {
 /* section 4: picture with info */
 .section-img-and-text {
   position: relative;
-  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px; 
+  background: radial-gradient(ellipse at top, #BF6B04, white);
 }
 
 .section-img2 {
-  width: 60%;
+  width: 80%;
   height: auto;
   border-radius: 30%;
   margin-left: 350px;
-  margin-top: 100px;
+  
 }
 
 .text-over-img {
   position: absolute;
   top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #000; /* Justera textfärgen efter behov */
+  left: 80%;
   text-align: center;
 }
 
