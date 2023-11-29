@@ -327,7 +327,12 @@
     .bulletpoints-images {
       display: flex;
       flex-direction: column;
+      Align-items: center;
       background: linear-gradient(180deg, #BF6B04 0%, rgba(191, 107, 4, 0.47) 53.65%, rgba(191, 107, 4, 0.00) 100%);
+    }
+    .section-header h2 {
+      color: #FFF;
+      font-size: 36px;
     }
     .general-imagecontainer {
       flex: 5; /* Add flex: 1 to make it share 50% width */
