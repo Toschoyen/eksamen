@@ -156,9 +156,6 @@ p {
   width:100%;
 }
 
-.btn:active {
-  top:2px;
-}
 
 .btn-secondary {
   display: block;
@@ -183,7 +180,6 @@ p {
 /* Show | section 2 : top 3 shows */
 .section2-div {
   width: 100%;
-  /* height: auto; */
   background-color: #F20505;
   margin-top: 2rem;
 }
@@ -191,13 +187,17 @@ p {
 .top3-logo {
   width: 8%;
   display: inline-block;
-  animation: rotateMe 5s ease-in-out infinite;
+  animation: spin 3s linear infinite;
 }
 
-@keyframes rotateMe {
-  100% {
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+   }
+
+  to {
     transform: rotate(360deg);
-}
+  }
 }
 
 
@@ -217,7 +217,7 @@ p {
   font-size: 2.5rem;
 }
 
-.section2-div-text p{
+.section2-div-text h3{
   font-size: 1.5rem;
   margin-bottom: -0.5rem;
 }
@@ -225,6 +225,7 @@ p {
 .section2-shows-cards-div {
   justify-content: space-around;
   padding: 2rem;
+  margin: 1rem 0;
   padding-bottom: 3rem;
   max-height: 100%; 
 }
@@ -266,6 +267,7 @@ p {
   left: 50%;
   transform: translateX(-50%);
 }
+
 
 /* Show | section3 */
 .section3-div {
@@ -319,6 +321,7 @@ p {
 .section4-div p{
   font-size: 1.5rem;
   padding: 0 2rem;
+  /* margin-bottom: 2rem; */
   text-align: center;
 }
 
@@ -450,7 +453,7 @@ p {
 .section5-div {
   background-color: #F5F5F5;
   padding: 1rem 2rem;
-  margin-bottom: 1rem; 
+  margin: 2rem 0; 
   justify-content: space-around;
 }
 .section5-div h3 {
