@@ -15,7 +15,7 @@
       <!-- Section1: Hero -->
       <section>
         <!-- intro of the page : shows in Las Vegas -->
-        <div class="hero-div flex-item flex-column">
+        <div id="hero-div" class="hero-div flex-item flex-column">
           <img
             class="hero-img"
             src="images/show-photo1.png"
@@ -29,16 +29,27 @@
               storm!<br />
               Get ready to be amazed by the most popular show in town.
             </p>
-            <a class="btn" href="">More information</a>
+            <a class="btn" href="#section2-div">More information</a>
           </div>
         </div>
       </section>
 
       <!-- Section2: Top 3 shows -->
       <section>
-        <div class="section2-div">
+        <div id="section2-div" class="section2-div">
           <div class="section2-div-text">
-            <h1>December <img class="top3-logo" src="images/top3.png" alt="top 3 animated logo"><img class="show-letter-logo" src="images/show-letter-logo.png" alt="show letter logo"></h1>
+            <h1>
+              December
+              <img
+                class="top3-logo"
+                src="images/top3.png"
+                alt="top 3 animated logo"
+              /><img
+                class="show-letter-logo"
+                src="images/show-letter-logo.png"
+                alt="show letter logo"
+              />
+            </h1>
             <p>
               Book your tickets now for an unforgettable night of entertainment!
             </p>
@@ -50,7 +61,12 @@
               <div class="show-card-div-text">
                 <h3>Vegas! The Show</h3>
                 <p>Witness the Unforgettable Spectacle of Vegas, The Show!</p>
-                <a class="btn" href="">Learn more</a>
+                <a
+                  class="btn"
+                  href="https://www.getyourguide.com/saxe-theater-l110252/75-minute-vegas-the-show-las-vegas-t17152/?ranking_uuid=c1beaa84-ccbd-46b7-9965-6c6c67ae4a6f"
+                  target="_blank"
+                  >Learn more</a
+                >
               </div>
             </div>
 
@@ -61,7 +77,12 @@
                 <p>
                   Experience the glmour of MJ Tribute Live Show in Las Vegas!
                 </p>
-                <a class="btn" href="">Learn more</a>
+                <a
+                  class="btn"
+                  href="https://www.getyourguide.com/las-vegas-l58/mj-live-at-the-riviera-hotel-casino-tickets-t51430/?ranking_uuid=c1beaa84-ccbd-46b7-9965-6c6c67ae4a6f"
+                  target="_blank"
+                  >Learn more</a
+                >
               </div>
             </div>
 
@@ -73,7 +94,12 @@
                   Elevate your evening! Dive into the Thrilling World of The
                   Ultimate Variety Show.
                 </p>
-                <a class="btn" href="">Learn more</a>
+                <a
+                  class="btn"
+                  href="https://www.getyourguide.com/las-vegas-l58/vip-ticket-to-v-the-ultimate-variety-show-t14007/?ranking_uuid=c1beaa84-ccbd-46b7-9965-6c6c67ae4a6f"
+                  target="_blank"
+                  >Learn more</a
+                >
               </div>
             </div>
           </div>
@@ -87,7 +113,12 @@
           <div class="overlay"></div>
           <div class="section3-text-div flex-item flex-column">
             <h1>Weekend's most popular show</h1>
-            <a class="btn" href="">Booking</a>
+            <a
+              class="btn"
+              href="https://www.vegas.com/shows/production/wow-las-vegas/"
+              target="_blank"
+              >Booking</a
+            >
           </div>
         </div>
       </section>
@@ -123,6 +154,7 @@
                   alt="The sphere img"
                 />
               </div>
+              <!-- section4-location1-div -->
 
               <div class="section4-location2-div">
                 <img
@@ -136,6 +168,7 @@
                   alt="The Colosseum theater img"
                 />
               </div>
+              <!-- section4-location2-div -->
 
               <div class="section4-location3-div">
                 <img
@@ -149,6 +182,7 @@
                   alt="Las Vegas Convention Center img"
                 />
               </div>
+              <!-- section4-location3-div -->
 
               <div class="section4-location4-div">
                 <img
@@ -161,34 +195,45 @@
                   src="images/show-photo-10.png"
                   alt="V Theater Box Office img"
                 />
-
-                <div class="section4-location5-div">
-                  <img
-                    class="pointer pointer5"
-                    src="images/pointer.png"
-                    alt="pointer"
-                  />
-                  <img
-                    class="img-location img-location5"
-                    src="images/show-photo-11.png"
-                    alt="V Theater Box Office img"
-                  />
               </div>
+              <!-- section4-location4-div -->
+
+              <div class="section4-location5-div">
+                <img
+                  class="pointer pointer5"
+                  src="images/pointer.png"
+                  alt="pointer"
+                />
+                <img
+                  class="img-location img-location5"
+                  src="images/show-photo-11.png"
+                  alt="V Theater Box Office img"
+                />
+              </div>
+              <!-- section4-location5-div -->
             </div>
+            <!-- section4-img-location-div -->
           </div>
+          <!-- section4-img-div -->
         </div>
+        <!-- section4-div -->
       </section>
 
       <!-- Section5: booking -->
       <section>
         <div class="section5-div flex-item">
-          <p>
+          <h3>
             Unlock an unforgettable journey of entertainment and luxury by
             securing your exclusive booking for the show that promises to
             redefine your Las Vegas experience!
-          </p>
+          </h3>
           <div class="section5-btns-div flex-item">
-            <a class="btn" href="">Booking Now</a>
+            <a
+              class="btn"
+              href="https://www.vegas.com/shows/?gad_source=1"
+              target="_blank"
+              >Booking Now</a
+            >
             <a class="btn-secondary" href="">Contact Us</a>
           </div>
         </div>
@@ -201,11 +246,13 @@
           <li>Mobile app</li>
           <li>Community</li>
           <li>Company</li>
-          <img
-            class="footer-ul-las-vegas-logo"
-            src="images/las-vegas-logo.png"
-            alt="Las Vegas logo"
-          />
+          <li>
+            <img
+              class="footer-ul-las-vegas-logo"
+              src="images/las-vegas-logo.png"
+              alt="Las Vegas logo"
+            />
+          </li>
           <li>Help desk</li>
           <li>Blog</li>
           <li>Resources</li>

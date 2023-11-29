@@ -122,14 +122,8 @@ p {
   line-height: 1.5rem;
   border-radius: 3em;
   position:relative;
-  animation: crunch 0.1ms 2s infinite;
 }
 
-@keyframe crunch {
-  0%,100% {
-    
-  }
-}
 
 .btn:after {
   position: absolute;
@@ -234,7 +228,6 @@ p {
   padding-bottom: 3rem;
   max-height: 100%; 
 }
-
 
 .show-card-div {
   width: 30%;
@@ -378,7 +371,6 @@ p {
   left: 380px;
 }
 
-
 .pointer4{
   top: 490px;
   left: 160px;
@@ -388,7 +380,6 @@ p {
   top: -27px;
   left: 220px;
 }
-
 
 .img-location {
   width: 25%;
@@ -462,7 +453,7 @@ p {
   margin-bottom: 1rem; 
   justify-content: space-around;
 }
-.section5-div p {
+.section5-div h3 {
  width: 50%;
  font-size: 1.5rem;
  padding-right: 1.5rem;
