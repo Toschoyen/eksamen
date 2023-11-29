@@ -67,9 +67,10 @@
       align-items: center; /* Center the items vertically */
       justify-content: flex-start;
       padding-left: 50px;
-      animation-name: slideInLeft;
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
+
+  }
+  #nav-background {
+    background-color: #555;
   }
   @keyframes slideInLeft {
     from {
@@ -83,6 +84,9 @@
       display: flex;
       align-items: center;
       padding-right: 200px;
+      animation-name: slideInLeft;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
   }
     nav ul {
       margin: 0;
@@ -91,6 +95,9 @@
       display: flex;
       justify-content: space-evenly;
       flex: 1; /* Expand the ul element to take the available space */
+      animation-name: slideInLeft;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
   } 
     nav li {
       margin: 0 10px;
@@ -105,6 +112,9 @@
   }
     nav a:hover {
       background-color: #555;
+  }
+  #nav-background a:hover {
+    background-color: #BF6B04;
   }
   @media only screen and (max-width: 967px) {
       nav ul {
