@@ -1,12 +1,65 @@
 /* Body Start */
-body {
+  body {
     height: 100vh; /* 100% av nettleseren viewporthøyden*/
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.5;
-}
+  }
 /* Body end */
+/* Footer start - Elin */
+  .Footer {
+    width: 100%;
+    background: #4158d9;
+    color: #f4f4f4;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .footer-ul-nav {
+    padding: 0 3rem;
+  }
+  .footer-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer-ul-las-vegas-logo {
+    width: 250px;
+    height: auto;
+    margin-right: 2rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .footer-ul-las-vegas-logo:hover{
+  transform: scale(1.1);
+  }
+  .footer hr {
+    margin: 20px;
+  }
+  .all-socialmedia-logos-div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 2rem;
+  }
+  .socialmedia-logo {
+    width: 55px;
+    height: 55px;
+    transition: all 0.3s ease-in-out;
+  }
+  .socialmedia-logo:hover{
+    transform: scale(1.2);
+  }
+  .copyright-div {
+    font-weight: normal;
+    padding-top: 10px;
+    text-align: center;
+  }
+/* Footer slutt - Elin */
 /* Hovedside Start - Tobias Schøyen */
   nav {
       display: flex;
@@ -14,9 +67,9 @@ body {
       align-items: center; /* Center the items vertically */
       justify-content: flex-start;
       padding-left: 50px;
-      animation-name: slideInLeft;
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
+  }
+  #nav-background {
+    background-color: #7f50bf;
   }
   @keyframes slideInLeft {
     from {
@@ -30,6 +83,9 @@ body {
       display: flex;
       align-items: center;
       padding-right: 200px;
+      animation-name: slideInLeft;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
   }
     nav ul {
       margin: 0;
@@ -38,6 +94,9 @@ body {
       display: flex;
       justify-content: space-evenly;
       flex: 1; /* Expand the ul element to take the available space */
+      animation-name: slideInLeft;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
   } 
     nav li {
       margin: 0 10px;
@@ -52,6 +111,9 @@ body {
   }
     nav a:hover {
       background-color: #555;
+  }
+  #nav-background a:hover {
+    background-color: #BF6B04;
   }
   @media only screen and (max-width: 967px) {
       nav ul {
@@ -265,7 +327,12 @@ body {
     .bulletpoints-images {
       display: flex;
       flex-direction: column;
+      Align-items: center;
       background: linear-gradient(180deg, #BF6B04 0%, rgba(191, 107, 4, 0.47) 53.65%, rgba(191, 107, 4, 0.00) 100%);
+    }
+    .section-header h2 {
+      color: #FFF;
+      font-size: 36px;
     }
     .general-imagecontainer {
       flex: 5; /* Add flex: 1 to make it share 50% width */
@@ -291,24 +358,181 @@ body {
       height: 50px;
     }
   /* Seksjon "bulletpoints-images" slutt */
-/* Hovedside Slutt - Tobias Schøyen */
-
-/* Underside - Kapell Start */
- <kode her>
-/* Underside - Kapell Slutt */
+/* Hovedside slutt - kodet av Tobias Schøyen */
+/* Underside - Kapell start - kodet av Florence */
+  /* Seksjon heroseksjon bryllup start */
+    .flex-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .flex-column {
+      flex-direction: column;
+    }
+    .hero-div {
+      position: relative;
+      width: 100%;
+    }
+    .hero-img {
+      width: 100%;
+      height: 100%;
+    }
+    .hero-img-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .hero-text-div {
+      position: absolute;
+      z-index: 2;
+      color: #f4f4f4;
+      font-family: 'Dancing Script';
+      width: 70%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    .hero-text-div h1 {
+      font-size: 6rem;
+      margin-bottom: 35px;
+    }
+    .hero-text-div p {
+      font-size: 4rem;
+      font-family: 'Dancing Script';
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  /* Seksjon heroseksjon bryllup start */
+  /* Seksjon under hero start */
+    .info-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: radial-gradient(ellipse at top, #BF6B04, white);
+      padding: 40px;
+    } 
+    .text-container {
+      width: 50%;
+      border: 2px solid #BF6B04;
+      padding: 20px; 
+      margin-left: 50px;
+      border-radius: 3%;
+      transition-property: border-color, box-shadow; 
+      transition-duration: 0.3s;
+    }
+    .text-container:hover {
+      border-color: #ffd700; /* Byt färgen när musen är över textrutan */
+      box-shadow: 0 0 20px #ffd700;
+    }
+    .section-img1 {
+      width: 20%;
+      height: auto;
+      margin-right: 200px;
+      border-radius: 5%; 
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .section-img1, .section-img2 { 
+      transition: transform 0.8s ease;
+    } 
+    .section-img1:hover, .section-img2:hover {
+      transform: scale(1.1);
+    }
+    /* Knapp i flere seksjoner start - kodet av Elin */
+    .btn {
+      display: block;
+      background-color: #bf6b04;
+      padding: 1rem;
+      border: none;
+      text-align: center;
+      color: #f4f4f4;
+      text-decoration: none;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      border-radius: 3em;
+      position:relative;
+      animation: crunch 0.1ms 2s infinite;
+    }
+    .btn:after {
+      position: absolute;
+      content:'';
+      width:0;
+      height: 100%;
+      top:0;
+      left:0;
+      direction:rtl;
+      z-index: -1;
+      }
+    /* Knapp i flere seksjoner slutt - kodet av Elin */ 
+  /* Seksjon under hero slutt */
+  /* Seksjon Innholdsbokser start */
+    .container {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px; 
+      margin-top: 100px; 
+    }
+    .box {
+      position: relative;
+      width: 30%;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      text-align: center; 
+      transition-property: border-color, box-shadow;
+      transition-duration: 0.3s;
+    }
+    .box:hover{
+      border-color:#BF6B04;
+      box-shadow: 0 0 20px #BF6B04;
+    }
+    .box img {
+      width: 100%;
+      border-radius: 50%; 
+      margin-bottom: 10px;
+    }
+    .box h2 {
+      margin-bottom: 10px;
+    }
+    .box h2, .box p{ 
+      opacity: 0;
+      transition: opacity 0.3s; 
+    }
+    .box:hover h2, .box:hover p{
+      opacity: 1; 
+    }
+  /* Seksjon Innholdsbokser slutt */ 
+  /* Seksjon bilde med info start */
+    .section-img-and-text {
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      position: relative;
+      padding-top: 50px;
+      padding-bottom: 50px; 
+      background: radial-gradient(ellipse at top, #BF6B04, white);
+    }
+    .section-img2 {
+      width: 60%;
+      height: auto;
+      border-radius: 30%;
+    }
+    .text-over-img {
+      text-align: center;
+    }
+  /* Seksjon bilde med info slutt */
+/* Underside - Kapell Slutt - Kodet av Florence */
 
 
 /* Underside - Kasino Start */
-<kode her>
+
 /* Underside - Kasino Slutt */
 
 /* Underside - Show Start */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .flex-item {
   display: flex;
   justify-content: center;
@@ -324,25 +548,20 @@ body {
   width: 100%;
   overflow: hidden;
 }
-
 .hero-img {
   width: 100%;
   height: auto;
   display: block;
   animation: magnifyMe 3s ease-in-out infinite;
 }
-
 @keyframes magnifyMe {
   0%,100% {
     transform: scale(1);
   }
-
   50%{
     transform: scale(1.1)
   }
-  
 }
-
 .overlay {
   position: absolute;
   width: 100%;
@@ -353,8 +572,6 @@ body {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
 }
-
-
 .hero-text-div {
   position: absolute;
   color: #f4f4f4;
@@ -365,26 +582,22 @@ body {
   text-align: center;
   width: 80%;
 }
-
 .hero-text-div h1 {
   font-size: 4rem;
   margin-bottom: 35px;
 }
-
 .hero-text-div p {
   color: #f4f4f4;
   font-size: 1.5rem;
   margin-top: 1.5rem;
   max-width: 100%;
 }
-
 .hero-div .btn {
   margin: 0 auto;
   margin-top: 3rem;
   width: 15rem;
   display: block;
 }
-
 /* button basic styling & hover */
 /* Denne delen(Button styling) bygget av Elin */
 .btn {
@@ -400,8 +613,6 @@ body {
   border-radius: 3em;
   position:relative;
 }
-
-
 .btn:after {
   position: absolute;
   content:'';
@@ -411,7 +622,6 @@ body {
   left:0;
   direction:rtl;
   z-index: -1;
-
   /* four <shadow-length> seperated by commas */
   /* box-shadow: h-shadow v-shadow blur spread color */
   box-shadow:
@@ -422,18 +632,14 @@ body {
   transition: all 0.3s ease;
   border-radius: 3em;
 }
-
 .btn:hover {
   background-color: #935203;
 }
-
 .btn:hover:after{
   left:auto;
   right:0;
   width:100%;
 }
-
-
 .btn-secondary {
   display: block;
   background-color: #f4f4f4;
@@ -447,58 +653,46 @@ body {
   border-radius: 3em;
   position:relative;
 }
-
 .btn-secondary:hover{
   background-color: #935203;
   color: #f4f4f4;
   border: none;
 }
-
 /* Show | section 2 : top 3 shows */
 .section2-div {
   width: 100%;
   background-color: #F20505;
   margin-top: 2rem;
 }
-
 .top3-logo {
   width: 8%;
   display: inline-block;
   animation: spin 3s linear infinite;
 }
-
 @keyframes spin {
   from {
     transform: rotate(0deg);
    }
-
   to {
     transform: rotate(360deg);
   }
 }
-
-
 .show-letter-logo {
   width: 15%;
   padding-left:10px;
   animation: bounceMe 1s ease-in-out infinite;
 }
-
-
 .section2-div-text{
   padding-top: 1rem;
   padding-left: 4rem;
 }
-
 .section2-div-text h1{
   font-size: 2.5rem;
 }
-
 .section2-div-text h3{
   font-size: 1.5rem;
   margin-bottom: -0.5rem;
 }
-
 .section2-shows-cards-div {
   justify-content: space-around;
   padding: 2rem;
@@ -506,46 +700,37 @@ body {
   padding-bottom: 3rem;
   max-height: 100%; 
 }
-
 .show-card-div {
   width: 30%;
   background-color: #0476D9;
   border-radius: 20px;
   overflow: hidden;
 }
-
 .show-card-div img {
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   transition: transform 0.8s ease;
 }
-
 .show-card-div:hover img {
   transform: scale(1.1);
 }
-
 .show-card-div-text {
   margin-bottom: 1.5rem;
 }
-
 .show-card-div-text h3{
   text-align: center;
   margin-top: 1.5rem;
  }
-
 .show-card-div-text p{
   margin-left: 1.5rem;
   margin-right: 1.5rem;
  }
-
 .show-card-div .btn {
   max-width: 50%;
   left: 50%;
   transform: translateX(-50%);
 }
-
-
 /* Show | section3 */
 .section3-div {
   width: 100%;
@@ -554,19 +739,15 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 .section3-div img{
   width: 100%;
   height: auto;
   display: block;
   transition: transform 0.8s ease;
 }
-
 .section3-div:hover img{
   transform: scale(1.1);
 }
-
-
 .section3-text-div{
   position:absolute;
   top: 50%;
@@ -576,32 +757,27 @@ body {
   text-align: center;
   width: 80%;
 }
-
 .section3-text-div h1{
   font-size: 3rem;
   margin-bottom: 30px;
   animation: magnifyMe 3s ease-in-out infinite;
 }
-
 .section3-text-div .btn{
  width: 15rem;
  display: block;
  margin: 0 auto;
 }
-
 /* Show | Section 4 */
 .section4-div h1 {
   font-size: 2.5rem;
   margin-bottom: 0;
 }
-
 .section4-div p{
   font-size: 1.5rem;
   padding: 0 2rem;
   /* margin-bottom: 2rem; */
   text-align: center;
 }
-
 .section4-img-div {
   /* width: 80%; */
   width: 950px;
@@ -609,14 +785,11 @@ body {
   margin: 2rem 0;
   position:relative;
 }
-
 .section4-img-map {
   width:100%;
   height:100%;  
   display: block;
 }
-
-
 .pointer{
   width: 300px;
   height: auto;
@@ -625,107 +798,86 @@ body {
   /* z-index: 200; */
   animation: bounceMe 1s  ease infinite;
 }
-
 @keyframes bounceMe {
   0%,100% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(-5%);
   } 
 }
-
 .pointer1 { 
   top: 340px;
   left: 247px ;  
 }
-
 .pointer2 {
   top:385px;
   left:85px;
 }
-
 .pointer3 {
   top: 225px;
   left: 380px;
 }
-
 .pointer4{
   top: 490px;
   left: 160px;
 }
-
 .pointer5{
   top: -27px;
   left: 220px;
 }
-
 .img-location {
   width: 25%;
   height: auto;
   position: absolute;
   border: 5px solid #090909;
   border-radius: 10%;
-
   /* manipulation */
   opacity:0;
   visibility: hidden;
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
-
 .img-location1 {
   top: 200px;
   left: 270px;
 }
-
 .img-location2 {
   top: 270px;
   left: 250px;
 }
-
 .img-location3 {
   top: 100px;
   left: 550px;
 }
-
 .img-location4 {
   top: 360px;
   left: 340px;
 }
-
 .img-location5 {
   top: 60px;
   left: 400px;
 }
-
   /* (`+`) : next-sibling combinator */
 .pointer1:hover + .img-location1 {
   opacity: 1;
   visibility: visible;
 }
-
 .pointer2:hover + .img-location2 {
   opacity: 1;
   visibility: visible;
 }
-
 .pointer3:hover + .img-location3 {
   opacity: 1;
   visibility: visible;
 }
-
 .pointer4:hover + .img-location4 {
   opacity: 1;
   visibility: visible;
 }
-
 .pointer5:hover + .img-location5 {
   opacity: 1;
   visibility: visible;
 }
-
-
 /* Show | Section 5 */
 .section5-div {
   background-color: #F5F5F5;
@@ -738,75 +890,12 @@ body {
  font-size: 1.5rem;
  padding-right: 1.5rem;
 }
-
 .section5-btns-div {
   flex-wrap: wrap;
   width: 30%;
 }
-
 .section5-btns-div > * {
   width: 15rem;
   margin: 0.5rem;
-}
-
-/* Footer : denne delen bygget av Elin */
-.Footer {
-  width: 100%;
-  background: #4158d9;
-  color: #f4f4f4;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.footer-ul-nav {
-  padding: 0 3rem;
-}
-.footer-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.footer-ul-las-vegas-logo {
-  width: 250px;
-  height: auto;
-  margin-right: 2rem;
-  transition: all 0.3s ease-in-out;
-}
-
-.footer-ul-las-vegas-logo:hover{
- transform: scale(1.1);
-}
-
-.footer hr {
-  margin: 20px;
-}
-
-.all-socialmedia-logos-div {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding: 2rem;
-}
-
-.socialmedia-logo {
-  width: 55px;
-  height: 55px;
-  transition: all 0.3s ease-in-out;
-}
-
-.socialmedia-logo:hover{
-  transform: scale(1.2);
-}
-
-.copyright-div {
-  font-weight: normal;
-  padding-top: 10px;
-  text-align: center;
 }
 /* Underside - Show Slutt */
