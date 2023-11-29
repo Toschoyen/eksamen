@@ -44,17 +44,29 @@ p {
 /* Show | section 1: intro of the show page */
 .hero-div {
   position: relative;
-  width: 100%;  
+  width: 100%;
+  overflow: hidden;
 }
 
 .hero-img {
   width: 100%;
   height: auto;
   display: block;
+  animation: magnifyMe 3s ease-in-out infinite;
 }
 
-.hero-div::before {
-  content:'';
+@keyframes magnifyMe {
+  0%,100% {
+    transform: scale(1);
+  }
+
+  50%{
+    transform: scale(1.1)
+  }
+  
+}
+
+.overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -64,6 +76,7 @@ p {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
 }
+
 
 .hero-text-div {
   position: absolute;
@@ -109,6 +122,13 @@ p {
   line-height: 1.5rem;
   border-radius: 3em;
   position:relative;
+  animation: crunch 0.1ms 2s infinite;
+}
+
+@keyframe crunch {
+  0%,100% {
+    
+  }
 }
 
 .btn:after {
@@ -174,6 +194,25 @@ p {
   margin-top: 2rem;
 }
 
+.top3-logo {
+  width: 8%;
+  display: inline-block;
+  animation: rotateMe 5s ease-in-out infinite;
+}
+
+@keyframes rotateMe {
+  100% {
+    transform: rotate(360deg);
+}
+}
+
+
+.show-letter-logo {
+  width: 15%;
+  padding-left:10px;
+  animation: bounceMe 1s ease-in-out infinite;
+}
+
 
 .section2-div-text{
   padding-top: 1rem;
@@ -196,16 +235,16 @@ p {
   max-height: 100%; 
 }
 
+
 .show-card-div {
   width: 30%;
   background-color: #0476D9;
   border-radius: 20px;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .show-card-div img {
   width: 100%;
-  height: auto;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   transition: transform 0.8s ease;
@@ -237,29 +276,24 @@ p {
 
 /* Show | section3 */
 .section3-div {
+  width: 100%;
   margin-top: 2rem;
   margin-bottom: 2rem;
   position: relative;
-  width: 100%;
+  overflow: hidden;
 }
 
 .section3-div img{
   width: 100%;
   height: auto;
   display: block;
+  transition: transform 0.8s ease;
 }
 
-.section3-div::before {
-  content:'';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+.section3-div:hover img{
+  transform: scale(1.1);
 }
+
 
 .section3-text-div{
   position:absolute;
@@ -274,6 +308,7 @@ p {
 .section3-text-div h1{
   font-size: 3rem;
   margin-bottom: 30px;
+  animation: magnifyMe 3s ease-in-out infinite;
 }
 
 .section3-text-div .btn{
@@ -291,7 +326,134 @@ p {
 .section4-div p{
   font-size: 1.5rem;
   padding: 0 2rem;
+  text-align: center;
 }
+
+.section4-img-div {
+  /* width: 80%; */
+  width: 950px;
+  height: 600px;
+  margin: 2rem 0;
+  position:relative;
+}
+
+.section4-img-map {
+  width:100%;
+  height:100%;  
+  display: block;
+}
+
+
+.pointer{
+  width: 300px;
+  height: auto;
+  position: absolute;
+  display: inline-block;
+  /* z-index: 200; */
+  animation: bounceMe 1s  ease infinite;
+}
+
+@keyframes bounceMe {
+  0%,100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5%);
+  } 
+}
+
+.pointer1 { 
+  top: 340px;
+  left: 247px ;  
+}
+
+.pointer2 {
+  top:385px;
+  left:85px;
+}
+
+.pointer3 {
+  top: 225px;
+  left: 380px;
+}
+
+
+.pointer4{
+  top: 490px;
+  left: 160px;
+}
+
+.pointer5{
+  top: -27px;
+  left: 220px;
+}
+
+
+.img-location {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  border: 5px solid #090909;
+  border-radius: 10%;
+
+  /* manipulation */
+  opacity:0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.img-location1 {
+  top: 200px;
+  left: 270px;
+}
+
+.img-location2 {
+  top: 270px;
+  left: 250px;
+}
+
+.img-location3 {
+  top: 100px;
+  left: 550px;
+}
+
+.img-location4 {
+  top: 360px;
+  left: 340px;
+}
+
+.img-location5 {
+  top: 60px;
+  left: 400px;
+}
+
+  /* (`+`) : next-sibling combinator */
+.pointer1:hover + .img-location1 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pointer2:hover + .img-location2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pointer3:hover + .img-location3 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pointer4:hover + .img-location4 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pointer5:hover + .img-location5 {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 /* Show | Section 5 */
 .section5-div {
@@ -343,6 +505,11 @@ p {
   width: 250px;
   height: auto;
   margin-right: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-ul-las-vegas-logo:hover{
+ transform: scale(1.1);
 }
 
 .footer hr {
@@ -359,6 +526,11 @@ p {
 .socialmedia-logo {
   width: 55px;
   height: 55px;
+  transition: all 0.3s ease-in-out;
+}
+
+.socialmedia-logo:hover{
+  transform: scale(1.2);
 }
 
 .copyright-div {
