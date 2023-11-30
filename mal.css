@@ -463,6 +463,7 @@ nav a:hover {
 .section-img2:hover {
   transform: scale(1.1);
 }
+
 /* Knapp i flere seksjoner start - kodet av Elin */
 .btn {
   display: block;
@@ -531,22 +532,44 @@ nav a:hover {
 /* Seksjon Innholdsbokser slutt */
 /* Seksjon bilde med info start */
 .section-img-and-text {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background: radial-gradient(ellipse at top, #bf6b04, white);
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  overflow: hidden; 
 }
+
 .section-img2 {
-  width: 60%;
+  width: inherit;
   height: auto;
-  border-radius: 30%;
 }
+
 .text-over-img {
+  position:absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
+
+.text-over-img h2 {
+  font-size: 3rem;
+  color: #f4f4f4;
+  margin-top:0;
+  margin-bottom: 2.5rem;
+  animation: magnifyMe 3s ease-in-out infinite;
+}
+
+.text-over-img .btn {
+  width: 15rem;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+} 
+
+
 /* Seksjon bilde med info slutt */
 /* Underside - Kapell Slutt - Kodet av Florence */
 
@@ -787,6 +810,7 @@ nav a:hover {
   display: block;
   margin: 0 auto;
 }
+
 /* Show | Section 4 */
 .section4-div h1 {
   font-size: 2.5rem;
