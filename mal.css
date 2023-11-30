@@ -582,7 +582,7 @@ nav a:hover {
   .casino {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-image: url("/images/picture_casino.jpg");  /* backround showcasing the lasvegas strip */
     overflow: hidden;
   }
