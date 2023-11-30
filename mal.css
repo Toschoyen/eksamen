@@ -824,11 +824,9 @@ nav a:hover {
 .section4-div p {
   font-size: 1.5rem;
   padding: 0 2rem;
-  /* margin-bottom: 2rem; */
   text-align: center;
 }
 .section4-img-div {
-  /* width: 80%; */
   width: 950px;
   height: 600px;
   margin: 2rem 0;
@@ -844,7 +842,6 @@ nav a:hover {
   height: auto;
   position: absolute;
   display: inline-block;
-  /* z-index: 200; */
   animation: bounceMe 1s ease infinite;
 }
 @keyframes bounceMe {
