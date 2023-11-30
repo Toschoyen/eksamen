@@ -12,31 +12,30 @@ body {
   width: 100%;
   background: #4158d9;
   color: #f4f4f4;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .footer-ul-nav {
-  padding: 0 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0;
 }
 .footer-ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .footer-ul-las-vegas-logo {
-  width: 150px;
+  width: 120px;
   height: auto;
-  margin-right: 2rem;
   transition: all 0.3s ease-in-out;
 }
 .footer-ul-las-vegas-logo:hover {
   transform: scale(1.1);
 }
-.footer hr {
-  margin: 20px;
+.Footer hr {
+  margin: 0 20px;
 }
+
 .all-socialmedia-logos-div {
   display: flex;
   justify-content: center;
@@ -54,6 +53,8 @@ body {
 .copyright-div {
   font-weight: normal;
   text-align: center;
+  line-height: 0.5;
+  padding-bottom:5px;
 }
 /* Footer slutt - Elin */
 /* Hovedside Start - Tobias Schøyen */
@@ -62,16 +63,17 @@ nav {
   flex-direction: row; /* Change the direction to row */
   align-items: center; /* Center the items vertically */
   justify-content: flex-start;
-  padding-left: 50px;
+  padding: 15px 50px;
 }
 #nav-background {
-  background-color: #7f50bf;
+  /* background-color: #7f50bf; */
   position: absolute;
   top:0;
   left:0;
   right:0;
   z-index:999;
 }
+
 @keyframes slideInLeft {
   from {
     transform: translateX(-100%);
@@ -102,7 +104,7 @@ nav ul {
 }
 nav li {
   margin: 0 10px;
-  font-size: 34px;
+  font-size: 1.5rem;
 }
 nav a {
   display: block;
