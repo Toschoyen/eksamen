@@ -394,7 +394,7 @@ nav a:hover {
 }
 .hero-img {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 .hero-img-overlay {
   position: absolute;
@@ -546,6 +546,9 @@ nav a:hover {
 
 .text-over-img {
   position:absolute;
+  width:90%;
+  height: auto;
+  padding: 20px 0;
   top:50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -556,16 +559,16 @@ nav a:hover {
   font-size: 3rem;
   color: #f4f4f4;
   margin-top:0;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   animation: magnifyMe 3s ease-in-out infinite;
 }
 
 .text-over-img .btn {
   width: 15rem;
   padding: 1rem;
-  margin-top: 1.5rem;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1rem;
   display: block;
 } 
 
@@ -795,6 +798,8 @@ nav a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 90%;
+  height:auto;
   transform: translate(-50%, -50%);
   color: #f4f4f4;
   text-align: center;
@@ -808,7 +813,7 @@ nav a:hover {
 .section3-text-div .btn {
   width: 15rem;
   display: block;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 /* Show | Section 4 */
