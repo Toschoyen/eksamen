@@ -14,6 +14,7 @@ body {
   color: #f4f4f4;
   font-size: 1.2rem;
   padding-bottom: 1rem;
+  display: block;
 }
 .footer-ul-nav {
   padding: 1rem 0;
@@ -431,7 +432,7 @@ nav a:hover {
   margin: 0 auto;
   max-width: 100%;
 }
-/* Seksjon heroseksjon bryllup start */
+/* Seksjon heroseksjon bryllup end */
 /* Seksjon under hero start */
 .info-section {
   display: flex;
@@ -542,7 +543,7 @@ nav a:hover {
   width: 100%;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .section-img2 {
@@ -551,11 +552,11 @@ nav a:hover {
 }
 
 .text-over-img {
-  position:absolute;
-  width:90%;
+  position: absolute;
+  width: 90%;
   height: auto;
   padding: 20px 0;
-  top:50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -564,7 +565,7 @@ nav a:hover {
 .text-over-img h2 {
   font-size: 3rem;
   color: #f4f4f4;
-  margin-top:0;
+  margin-top: 0;
   margin-bottom: 2rem;
   animation: magnifyMe 3s ease-in-out infinite;
 }
@@ -575,101 +576,166 @@ nav a:hover {
   margin-right: auto;
   margin-bottom: 1rem;
   display: block;
-} 
+}
 /* Seksjon bilde med info slutt */
 /* Underside - Kapell Slutt - Kodet av Florence */
 /* Underside - Kasino Start - Kodet av Ishfaq Dar*/
-  .casino {
-    /* display: flex;
-    justify-content: center;
-    align-items: flex-start; */
-    /* background-image: url("/images/picture_casino.jpg");  backround showcasing the lasvegas strip */
-    overflow: hidden;
-  }
-  button {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Good font */
-    font-size: 18px;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    background-color: #ffae42; /* orange color for the button */
-    box-shadow: 0 0 20px #ffae42; /* makes it glow */
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
-  button:hover {
-    transform: scale(1.05); /* this makes it a bit bigger when u click on it */
-    box-shadow: 0 0 30px #ffae42; /* this makes it glow*/
-  }
-  .glowing-text {
-    position: absolute;
-    top: 50px; /* Adjust the top position  */
-    left: 50px; /* Adjust the left position */
-    font-size: 64px; /* Increase the font size */
-    font-weight: bold; /* how it will look */
-    color: orange;
-    text-shadow: 0 0 10px orange;
-    animation: glow 1s ease-in-out infinite alternate;
-  }
-  .glowing-text-Nevada {
-  position: absolute;   /* glowing text for nevada */ 
-  top: 50px; /* Adjust the top position  */
-  right: 50px; /* Adjust the left position */
+
+.casino-main {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.casino-main img {
+  height: 100vh;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: magnifyMe 10s ease-in-out infinite; /*Animasjon (magnifyMe) kodet av Elin*/
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Button basic styling - kodet av Elin */
+.btn {
+  display: block;
+  background-color: #ffae42; /*adjusted for this page*/
+  padding: 1rem;
+  border: none;
+  text-align: center;
+  color: #f4f4f4;
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  border-radius: 3em;
+  position: relative;
+  width: 10rem; /* adjusted for this page*/
+}
+
+.btn:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  /* four <shadow-length> seperated by commas */
+  /* box-shadow: h-shadow v-shadow blur spread color */
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+  border-radius: 3em;
+}
+.btn:hover {
+  background-color: #935203;
+}
+.btn:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+/* button basic styling end */
+/* button extra styling - kodet av Ishfaq Dar */
+.btn-glow {
+  box-shadow: 0 0 20px #ffae42; /* makes it glow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-glow:hover {
+  transform: scale(1.05); /*get bigger in hover state*/
+  box-shadow: 0 0 30px #ffae42; /* add more glow*/
+}
+/* button ekstra styling end*/
+/* casino glowing texts start*/
+.glowing-text {
+  position: absolute;
+  top: 15%; /* Adjust the top position  */
+  left: 10%; /* Adjust the left position */
   font-size: 64px; /* Increase the font size */
   font-weight: bold; /* how it will look */
-  color: rgb(255, 0, 0);
-  text-shadow: rgb(196, 169, 13);
-  animation: glow 1s ease-in-out infinite alternate ;
+  color: #ffae42;
+  text-shadow: 0 0 10px #ffae42;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.glowing-text-Nevada {
+  position: absolute; /* glowing text for nevada */
+  top: 25%; /* Adjust the top position  */
+  right: 15%; /* Adjust the left position */
+  font-size: 64px; /* Increase the font size */
+  font-weight: bold; /* how it will look */
+  color: #f20505;
+  text-shadow: #ffae42;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px orange, 0 0 20px rgb(195, 255, 0), 0 0 30px orange;
   }
+  to {
+    text-shadow: 0 0 20px orange, 0 0 30px rgb(204, 255, 0), 0 0 40px orange;
+  }
+}
+/* casino glowing texts end*/
 /* Flip card start */
-  .flip-card {
-    width: 375px;
-    height: 325px;
-    perspective: 1000px; /* this sets the height and width of the flipcard */
-  }
-  .flip-card-inner { 
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.7s;
-    transform-style: preserve-3d; /* this shows the time the card takes to flip */
-  }
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg); /* this is how many deg the card flips */
-  }
-  .flip-card-front,
-  .flip-card-back {
-    width: 180%;
-    height: 110%;
-    position: absolute;
-    backface-visibility: hidden; /* back and front of the flipcard, justified so u can see
+.flip-card {
+  width: 375px;
+  height: 325px;
+  perspective: 1000px; /* this sets the height and width of the flipcard */
+}
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s;
+  transform-style: preserve-3d; /* this shows the time the card takes to flip */
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); /* this is how many deg the card flips */
+}
+.flip-card-front,
+.flip-card-back {
+  width: 180%;
+  height: 110%;
+  position: absolute;
+  backface-visibility: hidden; /* back and front of the flipcard, justified so u can see
     all the information displayed*/
-  }
-  .flip-card-front {
-    background-color: #040303; /* Flip card front its changed with a picture */
-  }
-  .flip-card-back {
-    transform: rotateY(180deg); /* Flip card rotates back 180 deg */
-  }
-  .flip-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Flip card image cover */
-  }
-  .middle {
+}
+.flip-card-front {
+  background-color: #040303; /* Flip card front its changed with a picture */
+}
+.flip-card-back {
+  transform: rotateY(180deg); /* Flip card rotates back 180 deg */
+}
+.flip-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Flip card image cover */
+}
+.casino-main-card-section-div {
   left: 40%;
   top: 40%;
-  position: absolute; /* Flip card makes the card in the middle of the screen*/ 
-  }
-  @keyframes glow {
-    from {
-      text-shadow: 0 0 10px orange, 0 0 20px rgb(195, 255, 0), 0 0 30px orange;
-    }
-    to {
-      text-shadow: 0 0 20px orange, 0 0 30px rgb(204, 255, 0), 0 0 40px orange;
-    }
-  }
+  position: absolute; /* Flip card makes the card in the middle of the screen*/
+}
+.casino-main-card-section-div .btn{
+ margin-bottom: 1.2rem;
+}
+
 /* Underside - Kasino Slutt */
 /* Underside - Show Start */
 .flex-item {
@@ -680,7 +746,9 @@ nav a:hover {
 .flex-column {
   flex-direction: column;
 }
+
 /* Show | section 1: intro of the show page */
+
 .hero-div {
   position: relative;
   width: 100%;
@@ -688,7 +756,7 @@ nav a:hover {
 }
 .hero-img {
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: block;
   animation: magnifyMe 3s ease-in-out infinite;
 }
@@ -798,7 +866,6 @@ nav a:hover {
 .section2-div {
   width: 100%;
   background-color: #f20505;
-  margin-top: 2rem;
 }
 .top3-logo {
   width: 8%;
@@ -889,7 +956,7 @@ nav a:hover {
   top: 50%;
   left: 50%;
   width: 90%;
-  height:auto;
+  height: auto;
   transform: translate(-50%, -50%);
   color: #f4f4f4;
   text-align: center;

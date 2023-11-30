@@ -7,13 +7,13 @@
     <link rel="stylesheet" type="text/css" href="mal.css">
     <title>Las Vegas</title>
 </head>
-<body > 
+<body> 
     <header>
-      <nav>
+      <nav id="nav-background">
         <div class="logo">
             <img src="/images/logo.png" alt="logo">
         </div>
-        <ul class="navigation-header">
+        <ul>
           <li><a href="hovedside.html">Home</a></li>
           <li><a href="underside-kasino.html">Casino</a></li>
           <li><a href="underside-kapell.html">Chapel</a></li>
@@ -22,14 +22,18 @@
       </nav>
     </header>
     <main>
-      <div class="casino">
+      <div class="casino-main">
         <img src="images/picture_casino.jpg" alt="">
-        <div class="glowing-text">LasVegas Casino</div> <!-- makes the LasVegas Casino sign glow -->
-        <div class="glowing-text-Nevada">State Of Nevada</div> <!-- makes the Nevada sign glow -->
-        <div class="middle">
-        <a href="https://www.mgmresorts.com/en/mgm-rewards-earned-benefits.html" target="_blank" rel="noopener noreferrer">
-          <button>Bonus</button> <!-- button that links to en external site for bonuses offered -->
-        </a>
+        <div class="overlay"></div>
+        <div class="casino-main-glowing-texts-div">
+          <div class="glowing-text">LasVegas Casino</div> <!-- makes the LasVegas Casino sign glow -->
+          <div class="glowing-text-Nevada">State Of Nevada</div> <!-- makes the Nevada sign glow -->
+        </div>
+
+        <div class="casino-main-card-section-div">
+          <a class="btn btn-glow" href="#" target="_blank" rel="noopener noreferrer">
+            Bonus <!-- button that links to en external site for bonuses offered -->
+          </a>
         <!-- flip card goes below this line -->
           <div class="flip-card">
             <div class="flip-card-inner">
@@ -37,14 +41,15 @@
                 <img src="/images/Flip-front.jpg" alt="Front Image"> <!-- front of the flip card - added images-->
               </div>
               <div class="flip-card-back">
-                <img src="/images/backflip.jpeg" alt="Back Image"> <!-- back of the flipcard - added images  -->
+                <img src="/images/flipcard-poker.jpg" alt="Back Image"> <!-- back of the flipcard - added images  -->
               </div>
             </div>
           </div>
         </div>
-    </div>
+    </div> <!-- End of casino --> 
   </main>
-    <footer class="Footer">
+
+  <footer class="Footer">
       <nav class="footer-ul-nav">
         <ul class="footer-ul">
           <li><a href="hovedside.html">Home</a></li>
