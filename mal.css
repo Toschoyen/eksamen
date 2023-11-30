@@ -580,10 +580,10 @@ nav a:hover {
 /* Underside - Kapell Slutt - Kodet av Florence */
 /* Underside - Kasino Start - Kodet av Ishfaq Dar*/
   .casino {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: flex-start;
-    background-image: url("/images/picture_casino.jpg");  /* backround showcasing the lasvegas strip */
+    align-items: flex-start; */
+    /* background-image: url("/images/picture_casino.jpg");  backround showcasing the lasvegas strip */
     overflow: hidden;
   }
   button {
