@@ -40,7 +40,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
-  padding-top: 0.5rem;
+  padding-top: 15px;
+  padding-bottom: 0;
 }
 .socialmedia-logo {
   width: 45px;
@@ -53,8 +54,8 @@ body {
 .copyright-div {
   font-weight: normal;
   text-align: center;
-  line-height: 0.5;
-  padding-bottom:5px;
+  line-height: 0.2;
+  padding-bottom: 5px;
 }
 /* Footer slutt - Elin */
 /* Hovedside Start - Tobias Schøyen */
@@ -68,10 +69,10 @@ nav {
 #nav-background {
   /* background-color: #7f50bf; */
   position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  z-index:999;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
 }
 
 @keyframes slideInLeft {
