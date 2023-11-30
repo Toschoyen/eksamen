@@ -6,8 +6,8 @@ body {
   padding: 0;
   line-height: 1.5;
 }
-/* Body end */
-/* Footer start - Elin */
+/* Body End */
+/* Footer Start - Elin Eunjung Park */
 .Footer {
   width: 100%;
   background: #4158d9;
@@ -58,7 +58,7 @@ body {
   text-align: center;
   line-height: 0.2;
 }
-/* Footer slutt - Elin */
+/* Footer slutt - Elin Eunjung Park */
 /* Hovedside Start - Tobias Schøyen */
 nav {
   display: flex;
@@ -134,7 +134,7 @@ nav a:hover {
     padding-right: 10px;
   }
 }
-/* Seksjon "hero-section-kontainer" start */
+/* Seksjon "hero-section-kontainer" Start */
 .hero-section-kontainer {
   display: flex;
   flex-direction: column;
@@ -168,7 +168,7 @@ nav a:hover {
   }
 }
 /* Seksjon "hero-section-kontainer" slutt */
-/* Seksjon "main-features" start */
+/* Seksjon "main-features" Start */
 .main-features {
   display: flex;
   padding: 40px 10px;
@@ -185,7 +185,7 @@ nav a:hover {
   flex-wrap: wrap;
   width: 100%;
 }
-/* Flipkort egenskaper start
+/* Flipkort egenskaper Start
     Flipkortenes struktur er inspirert av 
     https://www.youtube.com/watch?v=NCLdf661ILE&t=6s*/
 .flipcard-container {
@@ -204,7 +204,7 @@ nav a:hover {
   transform-style: preserve-3d; /* Behandler kortet som 3D elementer for en bedre animasjon */
 }
 .flipcard-container:hover > .flipcard /* Hindrer rotatsjonen repterer ved å flytte musepeker inn og ut */ {
-  cursor: pointer; /* endrer pekeren til en hånd med en pekende finger */
+  cursor: pointer; /* Endrer pekeren til en hånd med en pekende finger */
   transform: rotateY(180deg);
 }
 .front,
@@ -290,7 +290,7 @@ nav a:hover {
   color: #ffffff;
 }
 /* Flipkort egenskaper slutt */
-/* Flipkort forsidebilder start */
+/* Flipkort forsidebilder Start */
 #flipcard-1 {
   background-image: url("/images/flipcard-poker.jpg");
 }
@@ -302,7 +302,7 @@ nav a:hover {
 }
 /* Flipkort forsidebilder slutt */
 /* Seksjon "main-features" slutt */
-/* Seksjon "location" start */
+/* Seksjon "location" Start */
 .location,
 .general {
   display: flex;
@@ -329,11 +329,11 @@ nav a:hover {
   padding-right: 20px;
 }
 .location-imagecontainer {
-  flex: 5; /* dekke 50% av bredden i raden */
+  flex: 5; /* Dekke 50% av bredden i raden */
 }
 .location-imagecontainer img,
 .general-imagecontainer img {
-  width: 100%; /* dekker hele rommet */
+  width: 100%; /* Dekker hele rommet */
   height: 100%; /* Bidlet følger komprimeringen */
   border-radius: 10px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
@@ -343,8 +343,8 @@ nav a:hover {
 .general-imagecontainer img:hover {
   transform: scale(1.05);
 }
-/* Seksjon "location" start */
-/* Seksjon "bulletpoints-images" start */
+/* Seksjon "location" Start */
+/* Seksjon "bulletpoints-images" Start */
 .bulletpoints-images {
   display: flex;
   flex-direction: column;
@@ -383,10 +383,10 @@ nav a:hover {
   width: 50px;
   height: 50px;
 }
-/* Seksjon "bulletpoints-images" slutt */
-/* Hovedside slutt - kodet av Tobias Schøyen */
-/* Underside - Kapell start - kodet av Florence Chadare*/
-/* Seksjon heroseksjon bryllup start */
+/* Seksjon "bulletpoints-images" Slutt */
+/* Hovedside Slutt - kodet av Tobias Schøyen */
+/* Underside - Kapell Start - kodet av Florence Chadare*/
+/* Seksjon heroseksjon bryllup Start */
 .flex-item {
   display: flex;
   justify-content: center;
@@ -432,8 +432,8 @@ nav a:hover {
   margin: 0 auto;
   max-width: 100%;
 }
-/* Seksjon heroseksjon bryllup end */
-/* Seksjon under hero start */
+/* Seksjon heroseksjon bryllup End */
+/* Seksjon under hero Start */
 .info-section {
   display: flex;
   justify-content: space-between;
@@ -471,7 +471,7 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-/* Knapp i flere seksjoner start - kodet av Elin */
+/* Knapp i flere seksjoner Start - kodet av Elin */
 .btn {
   display: block;
   background-color: #bf6b04;
@@ -498,7 +498,7 @@ nav a:hover {
 }
 /* Knapp i flere seksjoner slutt - kodet av Elin */
 /* Seksjon under hero slutt */
-/* Seksjon Innholdsbokser start */
+/* Seksjon Innholdsbokser Start */
 .container {
   display: flex;
   justify-content: space-around;
@@ -536,8 +536,8 @@ nav a:hover {
 .box:hover p {
   opacity: 1;
 }
-/* Seksjon Innholdsbokser slutt */
-/* Seksjon bilde med info start - kodet av Elin */
+/* Seksjon Innholdsbokser Slutt */
+/* Seksjon bilde med info Start - kodet av Elin */
 .section-img-and-text {
   position: relative;
   width: 100%;
@@ -649,8 +649,8 @@ nav a:hover {
   right: 0;
   width: 100%;
 }
-/* button basic styling end */
-/* button extra styling - kodet av Ishfaq Dar */
+/* button basic styling End - Elin */
+/* button extra styling Start- kodet av Ishfaq Dar */
 .btn-glow {
   box-shadow: 0 0 20px #ffae42; /* makes it glow */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -660,8 +660,8 @@ nav a:hover {
   transform: scale(1.05); /*get bigger in hover state*/
   box-shadow: 0 0 30px #ffae42; /* add more glow*/
 }
-/* button ekstra styling end*/
-/* casino glowing texts start*/
+/* button ekstra styling End - Ishfaq Dar*/
+/* casino glowing texts Start*/
 .glowing-text {
   position: absolute;
   top: 15%; /* Adjust the top position  */
@@ -691,8 +691,8 @@ nav a:hover {
     text-shadow: 0 0 20px orange, 0 0 30px rgb(204, 255, 0), 0 0 40px orange;
   }
 }
-/* casino glowing texts end*/
-/* Flip card start */
+/* casino glowing texts End*/
+/* Flip card Start */
 .flip-card {
   width: 375px;
   height: 325px;
@@ -747,7 +747,7 @@ nav a:hover {
   flex-direction: column;
 }
 
-/* Show | section 1: intro of the show page */
+/* Show | section 1: intro of the show page Start*/
 
 .hero-div {
   position: relative;
@@ -862,7 +862,8 @@ nav a:hover {
   color: #f4f4f4;
   border: none;
 }
-/* Show | section 2 : top 3 shows */
+/* Show | section 1: intro of the show page End */
+/* Show | section 2 : top 3 shows Start */
 .section2-div {
   width: 100%;
   background-color: #f20505;
@@ -934,7 +935,8 @@ nav a:hover {
   left: 50%;
   transform: translateX(-50%);
 }
-/* Show | section3 */
+/* Show | section 2 : top 3 shows End */
+/* Show | section3 : weekends popular Start */
 .section3-div {
   width: 100%;
   margin-top: 2rem;
@@ -972,8 +974,8 @@ nav a:hover {
   display: block;
   margin: 1rem auto;
 }
-
-/* Show | Section 4 */
+/* Show | section3 : weekends popular End */
+/* Show | Section 4 : interactive map Start*/
 .section4-div h1 {
   font-size: 2.5rem;
   margin-bottom: 0;
@@ -1082,7 +1084,8 @@ nav a:hover {
   opacity: 1;
   visibility: visible;
 }
-/* Show | Section 5 */
+/* Show | Section 4 : interactive map End*/
+/* Show | Section 5 : booking & contact Start */
 .section5-div {
   background-color: #f5f5f5;
   padding: 1rem 2rem;
@@ -1102,4 +1105,5 @@ nav a:hover {
   width: 15rem;
   margin: 0.5rem;
 }
+/* Show | Section 5 : booking & contact End */
 /* Underside - Show Slutt */
