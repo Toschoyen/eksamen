@@ -1,548 +1,751 @@
 /* Body Start */
-  body {
-    height: 100vh; /* 100% av nettleseren viewporthøyden*/
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-  }
-/* Body end */
-/* Footer start - Elin */
-  .Footer {
-    width: 100%;
-    background: #4158d9;
-    color: #f4f4f4;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  .footer-ul-nav {
-    padding: 0 3rem;
-  }
-  .footer-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .footer-ul-las-vegas-logo {
-    width: 250px;
-    height: auto;
-    margin-right: 2rem;
-    transition: all 0.3s ease-in-out;
-  }
-  .footer-ul-las-vegas-logo:hover{
+body {
+  height: 100vh; /* 100% av nettleseren viewporthøyden*/
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+/* Body End */
+/* Footer Start - kodet av Elin Eunjung Park */
+.Footer {
+  width: 100%;
+  background: #4158d9;
+  color: #f4f4f4;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  display: block;
+}
+.footer-ul-nav {
+  padding: 1rem 0;
+}
+.footer-ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-ul-las-vegas-logo {
+  width: 120px;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+.footer-ul-las-vegas-logo:hover {
   transform: scale(1.1);
+}
+.Footer hr {
+  margin: 0 7rem;
+}
+.all-socialmedia-logos-div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.socialmedia-logo {
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease-in-out;
+}
+.socialmedia-logo:hover {
+  transform: scale(1.2);
+}
+.copyright-div {
+  font-weight: normal;
+  text-align: center;
+  line-height: 0.2;
+}
+/* Footer slutt - kodet av Elin Eunjung Park */
+/* Hovedside Start - kodet av Tobias Schøyen */
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 50px;
+}
+#nav-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
   }
-  .footer hr {
-    margin: 20px;
+  to {
+    transform: translateX(0);
   }
-  .all-socialmedia-logos-div {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 2rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  padding-right: 200px;
+  animation-name: slideInLeft;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1; /* Ekspanderer ul elementet for å ta opp resterende tilgjenglig rom */
+  animation-name: slideInLeft;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+nav li {
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none; /* Fjerner understrek */
+  padding: 10px;
+  transition: background-color 0.5s ease;
+}
+nav a:hover {
+  background-color: #555;
+}
+#nav-background a:hover {
+  background-color: #bf6b04;
+}
+@media only screen and (max-width: 967px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 0;
   }
-  .socialmedia-logo {
-    width: 55px;
-    height: 55px;
-    transition: all 0.3s ease-in-out;
-  }
-  .socialmedia-logo:hover{
-    transform: scale(1.2);
-  }
-  .copyright-div {
-    font-weight: normal;
-    padding-top: 10px;
-    text-align: center;
-  }
-/* Footer slutt - Elin */
-/* Hovedside Start - Tobias Schøyen */
-  nav {
-      display: flex;
-      flex-direction: row; /* Change the direction to row */
-      align-items: center; /* Center the items vertically */
-      justify-content: flex-start;
-      padding-left: 50px;
-  }
-  #nav-background {
-    background-color: #7f50bf;
-  }
-  @keyframes slideInLeft {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0);
-    }
+  nav li {
+    font-size: 24px; /*endrer størrelse for å unngå forflytting av logo */
   }
   .logo {
-      display: flex;
-      align-items: center;
-      padding-right: 200px;
-      animation-name: slideInLeft;
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
+    padding-right: 10px;
   }
-    nav ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      justify-content: space-evenly;
-      flex: 1; /* Expand the ul element to take the available space */
-      animation-name: slideInLeft;
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
-  } 
-    nav li {
-      margin: 0 10px;
-      font-size: 34px;
-  } 
-  nav a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 10px;
-      transition: background-color 0.5s ease;
+}
+/* Seksjon "hero-section-kontainer" Start - kodet av Tobias Schøyen*/
+.hero-section-kontainer {
+  display: flex;
+  flex-direction: column;
+  background-image: url("images/Hovedside-hero-section-background-image-fz.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.hero-title {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: auto; /* Flytter div'en til bunnen i forhold til flex-konteineren */
+  margin-bottom: -30px;
+  animation-name: flash;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes flash {
+  0% {
+    color: #ffffff;
   }
-    nav a:hover {
-      background-color: #555;
+  50% {
+    color: #bf6b04;
   }
-  #nav-background a:hover {
-    background-color: #BF6B04;
+  100% {
+    color: #ffffff;
   }
-  @media only screen and (max-width: 967px) {
-      nav ul {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        padding-left: 0;
-      } 
-      nav li {
-        font-size: 24px; /*endrer størrelse for å unngå forflytting av logo */
-      } 
-      .logo {
-        padding-right: 10px;
-      }
+}
+/* Seksjon "hero-section-kontainer" slutt - kodet av Tobias Schøyen */
+/* Seksjon "main-features" Start - kodet av Tobias Schøyen */
+.main-features {
+  display: flex;
+  padding: 40px 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(180deg, #bf6b04 0%, rgba(191, 107, 4, 0) 100%);
+}
+.flipcard-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+  /* Flipkort egenskaper Start
+      Flipkortenes struktur er inspirert av 
+      https://www.youtube.com/watch?v=NCLdf661ILE&t=6s. 
+      Kodens struktur er hentet fra tidligere egenprodusert kode i arbeidskrav.
+      Modifisert klasser, bakgrunnsbilder og innhold */
+  .flipcard-container {
+    width: 350px;
+    height: 350px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    perspective: 800px; /* Unngår at rotasjonen komprimerer bildet, mer 3D effekt */
+  }
+  .flipcard {
+    width: 100%; /* kaskade effekt, følger .drømmekort-konteiners størrelse */
+    height: 100%; /* kaskade effekt, følger .drømmekort-konteiners størrelse */
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d; /* Behandler kortet som 3D elementer for en bedre animasjon */
+  }
+  .flipcard-container:hover > .flipcard /* Hindrer rotatsjonen repterer ved å flytte musepeker inn og ut */ {
+    cursor: pointer; /* Endrer pekeren til en hånd med en pekende finger */
+    transform: rotateY(180deg);
+  }
+  .front,
+  .back {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem; /* Runde kanter */
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0);
+    position: absolute;
+    backface-visibility: hidden; /* gjemmer baksiden av kortet */
+  }
+  .front {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end; /* flytter h3 til bunnen på vertikal akse */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .front::before /* pseudo-element for skyggelag på toppen av bildet */ {
+    content: ""; /* setter pseudo-element til ingenting, men nødvendig for å være et eget lag */
+    top: 0; /* posisjon på toppen */
+    left: 0; /* posisjon helt til venstre */
+    border-radius: 2rem; /* Runde kanter på skyggelaget */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.504), rgba(0, 0, 0, 0));
+    /* Inspirert av 
+            [] https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+            [] https://developer.mozilla.org/en-US/docs/Web/CSS/::before 
+            [] https://css-tricks.com/almanac/selectors/a/after-and-before/
+            [] https://css-tricks.com/almanac/selectors/a/after-and-before/
+            [] https://css-tricks.com/pseudo-class-selectors/
+            [] Kombinert kunnskap fra overnevnte kilder med copy.ai for å 
+              få forslag på sammensetning */
+  }
+  .front h3 /* Flytter h3 tittelen mer spesifikt */ {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: white;
+  }
+  .back {
+    background: linear-gradient(
+      to bottom,
+      rgba(100, 100, 100, 0.5) 0%,
+      rgb(255, 255, 255) 100%
+    );
+    transform: rotateY(180deg); /* rotere bakteksten til riktig retning */
+  }
+  .back p {
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 500px) /* Reduserer fontstørrelse når nettleser < 600px bred,
+    responsivt tiltak */ {
+    .back p {
+      font-size: 16px;
     }
-  /* Seksjon "hero-section-kontainer" start */
-    .hero-section-kontainer {
-        display: flex;
-        flex-direction: column;
-        background-image: url("images/Hovedside-hero-section-background-image-fz.jpg");
-        background-size:cover;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        height: 800px; /* Replace with the actual height of the background image */
-    }
-    .hero-title {
-        color: #FFF;
-        text-align: center;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 400;
-        margin-top: auto; /* Flytter div'en til bunnen i forhold til flex-konteineren */
-        margin-bottom: -30px;
-        animation-name: flash;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-    }
-    @keyframes flash {
-      0% {
-        color: #ffffff;
-      }
-      50% {
-        color: #BF6B04;
-      }
-      100% {
-        color: #ffffff;
-      }
-    }
-  /* Seksjon "hero-section-kontainer" slutt */
-  /* Seksjon "main-features" start */
-    .main-features {
-        display: flex;
-        padding: 40px 10px;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        background: linear-gradient(180deg, #BF6B04 0%, rgba(191, 107, 4, 0.00) 100%);
-    }
-      .flipcard-row {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 100%
-    }
-    /* Flipkort egenskaper start
-    Flipkortenes struktur er inspirert av 
-    https://www.youtube.com/watch?v=NCLdf661ILE&t=6s*/
-      .flipcard-container {
-          width: 350px;
-          height: 350px;
-          margin-left: 20px;
-          margin-right: 20px;
-          margin-bottom: 40px;
-          perspective: 800px; /* Unngår at rotasjonen komprimerer bildet, mer 3D effekt */
-      }
-      .flipcard {
-          width: 100%; /* kaskade effekt, følger .drømmekort-konteiners størrelse */
-          height: 100%; /* kaskade effekt, følger .drømmekort-konteiners størrelse */
-          position: relative;
-          transition: transform 1500ms;
-          transform-style: preserve-3d; /* Behandler kortet som 3D elementer for en bedre animasjon */
-      }
-      .flipcard-container:hover > .flipcard /* Hindrer rotatsjonen repterer ved å flytte musepeker inn og ut */ {
-          cursor: pointer; /* endrer pekeren til en hånd med en pekende finger */
-          transform:rotateY(180deg)
-      }
-      .front,.back {
-          width: 100%;
-          height: 100%;
-          border-radius: 2rem; /* Runde kanter */
-          box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0);
-          position: absolute;
-          backface-visibility: hidden; /* gjemmer baksiden av kortet */
-      } 
-      .front {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          align-items: flex-end; /* flytter h3 til bunnen på vertikal akse */
-          background-repeat: no-repeat;
-          background-size: cover;
-      }
-      .front::before /* pseudo-element for skyggelag på toppen av bildet */ {
-          content: ""; /* setter pseudo-element til ingenting, men nødvendig for å være et eget lag */
-          top: 0; /* posisjon på toppen */
-          left: 0; /* posisjon helt til venstre */
-          border-radius: 2rem; /* Runde kanter på skyggelaget */
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(to right, rgba(0, 0, 0, 0.504), rgba(0, 0, 0, 0));
-          /* Inspirert av 
-          [] https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
-          [] https://developer.mozilla.org/en-US/docs/Web/CSS/::before 
-          [] https://css-tricks.com/almanac/selectors/a/after-and-before/
-          [] https://css-tricks.com/almanac/selectors/a/after-and-before/
-          [] https://css-tricks.com/pseudo-class-selectors/
-          [] Kombinert kunnskap fra overnevnte kilder med copy.ai for å 
-            få forslag på sammensetning */
-      }
-      .front h3 /* Flytter h3 tittelen mer spesifikt */ {
-          position: absolute;
-          bottom: 20px;
-          left: 30px;
-          color: white;
-      }
-      .back {
-          background: linear-gradient(to bottom, rgba(100, 100, 100, 0.500) 0%, rgb(255, 255, 255) 100%);
-          transform: rotateY(180deg) /* rotere bakteksten til riktig retning */
-      }
-      .back p {
-          color: rgb(0, 0, 0);
-          padding-left: 20px;
-          padding-right: 20px;
-          text-align: center;
-          font-size: 16px;
-      }
-      @media screen and (max-width: 500px) /* Reduserer fontstørrelse når nettleser < 600px bred, responsivt tiltak */ {
-          .back p {
-            font-size: 16px;
-          }
-      /* Inspirasjon fra copy.ai. Prompt "responsivt tiltak ved komprimering av nettleser*/
-      }
-      .back h3 {
-          color: rgb(0, 0, 0);
-          padding-left: 20px;
-          text-align: center;
-      }
-      .card-cta {
-          display: block;
-          margin: 0 auto;
-          padding: 10px 20px;
-          background-color: #BF6B04;
-          color: white;
-          border: none;
-          border-radius: 4px;
-          text-decoration: none;
-          transition: background-color 0.3s ease-in-out;
-      }
-      .card-cta:hover {
-        background-color: rgb(0, 0, 0);
-        color: #ffffff;
-      }
-    /* Flipkort egenskaper slutt */
-    /* Flipkort forsidebilder start */
-      #flipcard-1 {
-        background-image: url('/images/flipcard-poker.jpg');
-      }
-      #flipcard-2 {
-        background-image: url('/images/flipcard-bryllupskapell.jpg');
-      }
-      #flipcard-3 {
-        background-image: url('/images/flipcard-shows.jpg');
-      }
-    /* Flipkort forsidebilder slutt */
-  /* Seksjon "main-features" slutt */
-  /* Seksjon "location" start */
-    .location, .general {
-      display: flex;
-      flex-direction: row;
-      Align-items: center;
-      justify-content: flex-center;
-      height: 100%;
-      padding: 30px 80px;
-    }
-    .location {
-      background: #BF6B04;
-    }
-    .location-text {
-      color: #FFF;
-      font-size: 36px;
-      flex: 5;
-      padding-left: 10px;
-      padding-right: 20px;
-    }
-    .location-imagecontainer {
-      flex: 5; /* dekke 50% av bredden i raden */
-    }
-    .location-imagecontainer img, .general-imagecontainer img {
-      width: 100%; /* dekker hele rommet */
-      height: 100%; /* Bidlet følger komprimeringen */
-      border-radius: 10px;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.40);
-      transition: transform .5s ease;
-    }
-    .location-imagecontainer img:hover, .general-imagecontainer img:hover {
-      transform: scale(1.05);
-    }
-  /* Seksjon "location" start */
-  /* Seksjon "bulletpoints-images" start */
-    .bulletpoints-images {
-      display: flex;
-      flex-direction: column;
-      Align-items: center;
-      background: linear-gradient(180deg, #BF6B04 0%, rgba(191, 107, 4, 0.47) 53.65%, rgba(191, 107, 4, 0.00) 100%);
-    }
-    .section-header h2 {
-      color: #FFF;
-      font-size: 36px;
-    }
-    .general-imagecontainer {
-      flex: 5; /* Add flex: 1 to make it share 50% width */
-      padding-right: 50px;
-    }
-    .general-info {
-      display: flex;
-      flex-direction: column;
-      flex: 5;
-    }
-    .info-column {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-    .info-column p {
-      padding: 20px 20px;
-      color: black;
-      font-size: 24px;
-    }
-    .info-column img {
-      width: 50px;
-      height: 50px;
-    }
-  /* Seksjon "bulletpoints-images" slutt */
-/* Hovedside slutt - kodet av Tobias Schøyen */
-/* Underside - Kapell start - kodet av Florence */
-  /* Seksjon heroseksjon bryllup start */
-    .flex-item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .flex-column {
-      flex-direction: column;
-    }
-    .hero-div {
-      position: relative;
-      width: 100%;
-    }
-    .hero-img {
-      width: 100%;
-      height: 100%;
-    }
-    .hero-img-overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
-    .hero-text-div {
-      position: absolute;
-      z-index: 2;
-      color: #f4f4f4;
-      font-family: 'Dancing Script';
-      width: 70%;
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
-    }
-    .hero-text-div h1 {
-      font-size: 6rem;
-      margin-bottom: 35px;
-    }
-    .hero-text-div p {
-      font-size: 4rem;
-      font-family: 'Dancing Script';
-      margin: 0 auto;
-      max-width: 100%;
-    }
-  /* Seksjon heroseksjon bryllup start */
-  /* Seksjon under hero start */
-    .info-section {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: radial-gradient(ellipse at top, #BF6B04, white);
-      padding: 40px;
-    } 
-    .text-container {
-      width: 50%;
-      border: 2px solid #BF6B04;
-      padding: 20px; 
-      margin-left: 50px;
-      border-radius: 3%;
-      transition-property: border-color, box-shadow; 
-      transition-duration: 0.3s;
-    }
-    .text-container:hover {
-      border-color: #ffd700; /* Byt färgen när musen är över textrutan */
-      box-shadow: 0 0 20px #ffd700;
-    }
-    .section-img1 {
-      width: 20%;
-      height: auto;
-      margin-right: 200px;
-      border-radius: 5%; 
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-    .section-img1, .section-img2 { 
-      transition: transform 0.8s ease;
-    } 
-    .section-img1:hover, .section-img2:hover {
-      transform: scale(1.1);
-    }
-    /* Knapp i flere seksjoner start - kodet av Elin */
-    .btn {
-      display: block;
-      background-color: #bf6b04;
-      padding: 1rem;
-      border: none;
-      text-align: center;
-      color: #f4f4f4;
-      text-decoration: none;
-      font-size: 1.2rem;
-      line-height: 1.5rem;
-      border-radius: 3em;
-      position:relative;
-      animation: crunch 0.1ms 2s infinite;
-    }
-    .btn:after {
-      position: absolute;
-      content:'';
-      width:0;
-      height: 100%;
-      top:0;
-      left:0;
-      direction:rtl;
-      z-index: -1;
-      }
-    /* Knapp i flere seksjoner slutt - kodet av Elin */ 
-  /* Seksjon under hero slutt */
-  /* Seksjon Innholdsbokser start */
-    .container {
-      display: flex;
-      justify-content: space-around;
-      margin: 20px; 
-      margin-top: 100px; 
-    }
-    .box {
-      position: relative;
-      width: 30%;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      text-align: center; 
-      transition-property: border-color, box-shadow;
-      transition-duration: 0.3s;
-    }
-    .box:hover{
-      border-color:#BF6B04;
-      box-shadow: 0 0 20px #BF6B04;
-    }
-    .box img {
-      width: 100%;
-      border-radius: 50%; 
-      margin-bottom: 10px;
-    }
-    .box h2 {
-      margin-bottom: 10px;
-    }
-    .box h2, .box p{ 
-      opacity: 0;
-      transition: opacity 0.3s; 
-    }
-    .box:hover h2, .box:hover p{
-      opacity: 1; 
-    }
-  /* Seksjon Innholdsbokser slutt */ 
-  /* Seksjon bilde med info start */
-    .section-img-and-text {
-      display: flex;
-      justify-content: space-between; 
-      align-items: center;
-      position: relative;
-      padding-top: 50px;
-      padding-bottom: 50px; 
-      background: radial-gradient(ellipse at top, #BF6B04, white);
-    }
-    .section-img2 {
-      width: 60%;
-      height: auto;
-      border-radius: 30%;
-    }
-    .text-over-img {
-      text-align: center;
-    }
-  /* Seksjon bilde med info slutt */
+    /* Responsivt tiltak ved komprimering av nettleser*/
+  }
+  .back h3 {
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+    text-align: center;
+  }
+  .card-cta {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #bf6b04;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .card-cta:hover {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+  }
+  /* Flipkort forsidebilder start - kodet av Tobias Schøyen  */
+  #flipcard-1 {
+    background-image: url("/images/flipcard-poker.jpg");
+  }
+  #flipcard-2 {
+    background-image: url("/images/flipcard-bryllupskapell.jpg");
+  }
+  #flipcard-3 {
+    background-image: url("/images/flipcard-shows.jpg");
+  }
+  /* Flipkort forsidebilder slutt - kodet av Tobias Schøyen  */
+  /* Flipkort egenskaper slutt - kodet av Tobias Schøyen  */
+/* Seksjon "main-features" slutt - kodet av Tobias Schøyen */
+/* Seksjon "location" start - kodet av Tobias Schøyen  */
+.location,
+.general {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-center;
+  height: 100%;
+  padding: 30px 80px;
+}
+@media screen and (max-width: 900px) {
+  .location,
+  .general {
+    flex-direction: column;
+  }
+}
+.location {
+  background: #bf6b04;
+}
+.location-text {
+  color: #fff;
+  font-size: 36px;
+  flex: 5;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.location-imagecontainer {
+  flex: 5; /* Dekke 50% av bredden i raden */
+}
+.location-imagecontainer img,
+.general-imagecontainer img {
+  width: 100%; /* Dekker hele rommet */
+  height: 100%; /* Bidlet følger komprimeringen */
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+  transition: transform 0.5s ease;
+}
+.location-imagecontainer img:hover,
+.general-imagecontainer img:hover {
+  transform: scale(1.05);
+}
+/* Seksjon "location" Start */
+/* Seksjon "bulletpoints-images" Start */
+.bulletpoints-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    #bf6b04 0%,
+    rgba(191, 107, 4, 0.47) 53.65%,
+    rgba(191, 107, 4, 0) 100%
+  );
+}
+.section-header h2 {
+  color: #fff;
+  font-size: 36px;
+}
+.general-imagecontainer {
+  flex: 5; /* Add flex: 1 to make it share 50% width */
+  padding-right: 50px;
+}
+.general-info {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+.info-column {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.info-column p {
+  padding: 20px 20px;
+  color: black;
+  font-size: 24px;
+}
+.info-column img {
+  width: 50px;
+  height: 50px;
+}
+/* Seksjon "bulletpoints-images" Slutt */
+/* Hovedside Slutt - kodet av Tobias Schøyen */
+/* Underside - Kapell Start - kodet av Florence Chadare*/
+/* Seksjon heroseksjon bryllup Start */
+.flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.hero-div {
+  position: relative;
+  width: 100%;
+}
+.hero-img {
+  width: 100%;
+  height: 100vh;
+}
+.hero-img-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.hero-text-div {
+  position: absolute;
+  z-index: 2;
+  color: #f4f4f4;
+  font-family: "Dancing Script";
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.hero-text-div h1 {
+  font-size: 6rem;
+  margin-bottom: 35px;
+}
+.hero-text-div p {
+  font-size: 4rem;
+  font-family: "Dancing Script";
+  margin: 0 auto;
+  max-width: 100%;
+}
+/* Seksjon heroseksjon bryllup End */
+/* Seksjon under hero Start */
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: radial-gradient(ellipse at top, #bf6b04, white);
+  padding: 40px;
+}
+.text-container {
+  width: 50%;
+  border: 2px solid #bf6b04;
+  padding: 20px;
+  margin-left: 50px;
+  border-radius: 3%;
+  transition-property: border-color, box-shadow;
+  transition-duration: 0.3s;
+}
+.text-container:hover {
+  border-color: #ffd700; /* Byt färgen när musen är över textrutan */
+  box-shadow: 0 0 20px #ffd700;
+}
+.section-img1 {
+  width: 20%;
+  height: auto;
+  margin-right: 200px;
+  border-radius: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.section-img1,
+.section-img2 {
+  transition: transform 0.8s ease;
+}
+.section-img1:hover,
+.section-img2:hover {
+  transform: scale(1.1);
+}
+
+/* Knapp i flere seksjoner Start - kodet av Elin */
+.btn {
+  display: block;
+  background-color: #bf6b04;
+  padding: 1rem;
+  border: none;
+  text-align: center;
+  color: #f4f4f4;
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  border-radius: 3em;
+  position: relative;
+  animation: crunch 0.1ms 2s infinite;
+}
+.btn:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+}
+/* Knapp i flere seksjoner slutt - kodet av Elin */
+/* Seksjon under hero slutt */
+/* Seksjon Innholdsbokser Start - kodet av Florence */
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  margin-top: 100px;
+}
+.box {
+  position: relative;
+  width: 30%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  transition-property: border-color, box-shadow;
+  transition-duration: 0.3s;
+}
+.box:hover {
+  border-color: #bf6b04;
+  box-shadow: 0 0 20px #bf6b04;
+}
+.box img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.box h2 {
+  margin-bottom: 10px;
+}
+.box h2,
+.box p {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.box:hover h2,
+.box:hover p {
+  opacity: 1;
+}
+/* Seksjon Innholdsbokser Slutt */
+/* Seksjon bilde med info Start - kodet av Elin */
+.section-img-and-text {
+  position: relative;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.section-img2 {
+  width: inherit;
+  height: auto;
+}
+
+.text-over-img {
+  position: absolute;
+  width: 90%;
+  height: auto;
+  padding: 20px 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-over-img h2 {
+  font-size: 3rem;
+  color: #f4f4f4;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  animation: magnifyMe 3s ease-in-out infinite;
+}
+.text-over-img .btn {
+  width: 15rem;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  display: block;
+}
+/* Seksjon bilde med info slutt */
 /* Underside - Kapell Slutt - Kodet av Florence */
+/* Underside - Kasino Start - Kodet av Ishfaq Dar*/
 
+.casino-main {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
 
-/* Underside - Kasino Start */
+.casino-main img {
+  height: 100vh;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: magnifyMe 10s ease-in-out infinite; /*Animasjon (magnifyMe) kodet av Elin*/
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Button basic styling - kodet av Elin */
+.btn {
+  display: block;
+  background-color: #ffae42; /*adjusted for this page*/
+  padding: 1rem;
+  border: none;
+  text-align: center;
+  color: #f4f4f4;
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  border-radius: 3em;
+  position: relative;
+  width: 10rem; /* adjusted for this page*/
+}
+
+.btn:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  /* four <shadow-length> seperated by commas */
+  /* box-shadow: h-shadow v-shadow blur spread color */
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+  border-radius: 3em;
+}
+.btn:hover {
+  background-color: #935203;
+}
+.btn:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+/* button basic styling End - Elin */
+/* button extra styling Start- kodet av Ishfaq Dar */
+.btn-glow {
+  box-shadow: 0 0 20px #ffae42; /* makes it glow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-glow:hover {
+  transform: scale(1.05); /*get bigger in hover state*/
+  box-shadow: 0 0 30px #ffae42; /* add more glow*/
+}
+/* button ekstra styling End - Ishfaq Dar*/
+/* casino glowing texts Start*/
+.glowing-text {
+  position: absolute;
+  top: 15%; /* Adjust the top position  */
+  left: 10%; /* Adjust the left position */
+  font-size: 64px; /* Increase the font size */
+  font-weight: bold; /* how it will look */
+  color: #ffae42;
+  text-shadow: 0 0 10px #ffae42;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.glowing-text-Nevada {
+  position: absolute; /* glowing text for nevada */
+  top: 25%; /* Adjust the top position  */
+  right: 15%; /* Adjust the left position */
+  font-size: 64px; /* Increase the font size */
+  font-weight: bold; /* how it will look */
+  color: #f20505;
+  text-shadow: #ffae42;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px orange, 0 0 20px rgb(195, 255, 0), 0 0 30px orange;
+  }
+  to {
+    text-shadow: 0 0 20px orange, 0 0 30px rgb(204, 255, 0), 0 0 40px orange;
+  }
+}
+/* casino glowing texts End*/
+/* Flip card Start */
+.flip-card {
+  width: 375px;
+  height: 325px;
+  perspective: 1000px; /* this sets the height and width of the flipcard */
+}
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s;
+  transform-style: preserve-3d; /* this shows the time the card takes to flip */
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); /* this is how many deg the card flips */
+}
+.flip-card-front,
+.flip-card-back {
+  width: 180%;
+  height: 110%;
+  position: absolute;
+  backface-visibility: hidden; /* back and front of the flipcard, justified so u can see
+    all the information displayed*/
+}
+.flip-card-front {
+  background-color: #040303; /* Flip card front its changed with a picture */
+}
+.flip-card-back {
+  transform: rotateY(180deg); /* Flip card rotates back 180 deg */
+}
+.flip-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Flip card image cover */
+}
+.casino-main-card-section-div {
+  left: 40%;
+  top: 40%;
+  position: absolute; /* Flip card makes the card in the middle of the screen*/
+}
+.casino-main-card-section-div .btn{
+ margin-bottom: 1.2rem;
+}
 
 /* Underside - Kasino Slutt */
-
 /* Underside - Show Start */
 .flex-item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .flex-column {
   flex-direction: column;
 }
-/* Show | section 1: intro of the show page */
+
+/* Show | section 1: intro of the show page Start*/
+
 .hero-div {
   position: relative;
   width: 100%;
@@ -550,16 +753,17 @@
 }
 .hero-img {
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: block;
   animation: magnifyMe 3s ease-in-out infinite;
 }
 @keyframes magnifyMe {
-  0%,100% {
+  0%,
+  100% {
     transform: scale(1);
   }
-  50%{
-    transform: scale(1.1)
+  50% {
+    transform: scale(1.1);
   }
 }
 .overlay {
@@ -598,8 +802,11 @@
   width: 15rem;
   display: block;
 }
-/* button basic styling & hover */
-/* Denne delen(Button styling) bygget av Elin */
+/* Button basic styling & hover */
+/* Button animasjon er inspirert av en blog. 
+https://inpa.tistory.com/entry/CSS-%F0%9F%92%8D-%EB%B2%84%ED%8A%BC-%EB%94%94%EC%9E%90%EC%9D%B8-%EB%AA%A8%EC%9D%8C#%EB%AC%B4%EB%82%9C%ED%95%9C_%EB%B2%84%ED%8A%BC_%EC%BB%AC%EB%A0%89%EC%85%98
+*/
+
 .btn {
   display: block;
   background-color: #bf6b04;
@@ -611,34 +818,31 @@
   font-size: 1.2rem;
   line-height: 1.5rem;
   border-radius: 3em;
-  position:relative;
+  position: relative;
 }
 .btn:after {
   position: absolute;
-  content:'';
-  width:0;
+  content: "";
+  width: 0;
   height: 100%;
-  top:0;
-  left:0;
-  direction:rtl;
+  top: 0;
+  left: 0;
+  direction: rtl;
   z-index: -1;
   /* four <shadow-length> seperated by commas */
   /* box-shadow: h-shadow v-shadow blur spread color */
-  box-shadow:
-  -7px -7px 20px 0px #fff9,
-  -4px -4px 5px 0px #fff9,
-  7px 7px 20px 0px #0002,
-  4px 4px 5px 0px #0001;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
   transition: all 0.3s ease;
   border-radius: 3em;
 }
 .btn:hover {
   background-color: #935203;
 }
-.btn:hover:after{
-  left:auto;
-  right:0;
-  width:100%;
+.btn:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
 }
 .btn-secondary {
   display: block;
@@ -646,23 +850,23 @@
   padding: 1rem;
   border: 2px solid #bf6b04;
   text-align: center;
-  color: #bf6b04 ;
+  color: #bf6b04;
   text-decoration: none;
   font-size: 1.2rem;
   line-height: 1.5rem;
   border-radius: 3em;
-  position:relative;
+  position: relative;
 }
-.btn-secondary:hover{
+.btn-secondary:hover {
   background-color: #935203;
   color: #f4f4f4;
   border: none;
 }
-/* Show | section 2 : top 3 shows */
+/* Show | section 1: intro of the show page End */
+/* Show | section 2 : top 3 shows Start */
 .section2-div {
   width: 100%;
-  background-color: #F20505;
-  margin-top: 2rem;
+  background-color: #f20505;
 }
 .top3-logo {
   width: 8%;
@@ -672,24 +876,24 @@
 @keyframes spin {
   from {
     transform: rotate(0deg);
-   }
+  }
   to {
     transform: rotate(360deg);
   }
 }
 .show-letter-logo {
   width: 15%;
-  padding-left:10px;
+  padding-left: 10px;
   animation: bounceMe 1s ease-in-out infinite;
 }
-.section2-div-text{
+.section2-div-text {
   padding-top: 1rem;
   padding-left: 4rem;
 }
-.section2-div-text h1{
+.section2-div-text h1 {
   font-size: 2.5rem;
 }
-.section2-div-text h3{
+.section2-div-text h3 {
   font-size: 1.5rem;
   margin-bottom: -0.5rem;
 }
@@ -698,11 +902,11 @@
   padding: 2rem;
   margin: 1rem 0;
   padding-bottom: 3rem;
-  max-height: 100%; 
+  max-height: 100%;
 }
 .show-card-div {
   width: 30%;
-  background-color: #0476D9;
+  background-color: #0476d9;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -718,20 +922,21 @@
 .show-card-div-text {
   margin-bottom: 1.5rem;
 }
-.show-card-div-text h3{
+.show-card-div-text h3 {
   text-align: center;
   margin-top: 1.5rem;
- }
-.show-card-div-text p{
+}
+.show-card-div-text p {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
- }
+}
 .show-card-div .btn {
   max-width: 50%;
   left: 50%;
   transform: translateX(-50%);
 }
-/* Show | section3 */
+/* Show | section 2 : top 3 shows End */
+/* Show | section3 : weekends popular Start */
 .section3-div {
   width: 100%;
   margin-top: 2rem;
@@ -739,90 +944,91 @@
   position: relative;
   overflow: hidden;
 }
-.section3-div img{
+.section3-div img {
   width: 100%;
   height: auto;
   display: block;
   transition: transform 0.8s ease;
 }
-.section3-div:hover img{
+.section3-div:hover img {
   transform: scale(1.1);
 }
-.section3-text-div{
-  position:absolute;
+.section3-text-div {
+  position: absolute;
   top: 50%;
   left: 50%;
+  width: 90%;
+  height: auto;
   transform: translate(-50%, -50%);
-  color:#f4f4f4;
+  color: #f4f4f4;
   text-align: center;
   width: 80%;
 }
-.section3-text-div h1{
+.section3-text-div h1 {
   font-size: 3rem;
   margin-bottom: 30px;
   animation: magnifyMe 3s ease-in-out infinite;
 }
-.section3-text-div .btn{
- width: 15rem;
- display: block;
- margin: 0 auto;
+.section3-text-div .btn {
+  width: 15rem;
+  display: block;
+  margin: 1rem auto;
 }
-/* Show | Section 4 */
+/* Show | section3 : weekends popular End */
+/* Show | Section 4 : interactive map Start*/
 .section4-div h1 {
   font-size: 2.5rem;
   margin-bottom: 0;
 }
-.section4-div p{
+.section4-div p {
   font-size: 1.5rem;
   padding: 0 2rem;
-  /* margin-bottom: 2rem; */
   text-align: center;
 }
 .section4-img-div {
-  /* width: 80%; */
   width: 950px;
   height: 600px;
   margin: 2rem 0;
-  position:relative;
+  position: relative;
 }
 .section4-img-map {
-  width:100%;
-  height:100%;  
+  width: 100%;
+  height: 100%;
   display: block;
 }
-.pointer{
+.pointer {
   width: 300px;
   height: auto;
   position: absolute;
   display: inline-block;
-  /* z-index: 200; */
-  animation: bounceMe 1s  ease infinite;
+  animation: bounceMe 1s ease infinite;
 }
 @keyframes bounceMe {
-  0%,100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-5%);
-  } 
+  }
 }
-.pointer1 { 
+.pointer1 {
   top: 340px;
-  left: 247px ;  
+  left: 247px;
 }
 .pointer2 {
-  top:385px;
-  left:85px;
+  top: 385px;
+  left: 85px;
 }
 .pointer3 {
   top: 225px;
   left: 380px;
 }
-.pointer4{
+.pointer4 {
   top: 490px;
   left: 160px;
 }
-.pointer5{
+.pointer5 {
   top: -27px;
   left: 220px;
 }
@@ -833,7 +1039,7 @@
   border: 5px solid #090909;
   border-radius: 10%;
   /* manipulation */
-  opacity:0;
+  opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
@@ -857,7 +1063,7 @@
   top: 60px;
   left: 400px;
 }
-  /* (`+`) : next-sibling combinator */
+/* (`+`) : next-sibling combinator */
 .pointer1:hover + .img-location1 {
   opacity: 1;
   visibility: visible;
@@ -878,17 +1084,18 @@
   opacity: 1;
   visibility: visible;
 }
-/* Show | Section 5 */
+/* Show | Section 4 : interactive map End*/
+/* Show | Section 5 : booking & contact Start */
 .section5-div {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding: 1rem 2rem;
-  margin: 2rem 0; 
+  margin: 2rem 0;
   justify-content: space-around;
 }
 .section5-div h3 {
- width: 50%;
- font-size: 1.5rem;
- padding-right: 1.5rem;
+  width: 50%;
+  font-size: 1.5rem;
+  padding-right: 1.5rem;
 }
 .section5-btns-div {
   flex-wrap: wrap;
@@ -898,4 +1105,5 @@
   width: 15rem;
   margin: 0.5rem;
 }
+/* Show | Section 5 : booking & contact End */
 /* Underside - Show Slutt */
