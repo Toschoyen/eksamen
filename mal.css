@@ -805,8 +805,11 @@ nav a:hover {
   width: 15rem;
   display: block;
 }
-/* button basic styling & hover */
-/* Denne delen(Button styling) kodet av Elin */
+/* Button basic styling & hover */
+/* Button animasjon er inspirert av en blog. 
+https://inpa.tistory.com/entry/CSS-%F0%9F%92%8D-%EB%B2%84%ED%8A%BC-%EB%94%94%EC%9E%90%EC%9D%B8-%EB%AA%A8%EC%9D%8C#%EB%AC%B4%EB%82%9C%ED%95%9C_%EB%B2%84%ED%8A%BC_%EC%BB%AC%EB%A0%89%EC%85%98
+*/
+
 .btn {
   display: block;
   background-color: #bf6b04;
