@@ -7,7 +7,7 @@ body {
   line-height: 1.5;
 }
 /* Body End */
-/* Footer Start - Elin Eunjung Park */
+/* Footer Start - kodet av Elin Eunjung Park */
 .Footer {
   width: 100%;
   background: #4158d9;
@@ -19,7 +19,6 @@ body {
 .footer-ul-nav {
   padding: 1rem 0;
 }
-
 .footer-ul {
   list-style-type: none;
   display: flex;
@@ -37,7 +36,6 @@ body {
 .Footer hr {
   margin: 0 7rem;
 }
-
 .all-socialmedia-logos-div {
   display: flex;
   justify-content: center;
@@ -58,24 +56,22 @@ body {
   text-align: center;
   line-height: 0.2;
 }
-/* Footer slutt - Elin Eunjung Park */
-/* Hovedside Start - Tobias Schøyen */
+/* Footer slutt - kodet av Elin Eunjung Park */
+/* Hovedside Start - kodet av Tobias Schøyen */
 nav {
   display: flex;
-  flex-direction: row; /* Change the direction to row */
-  align-items: center; /* Center the items vertically */
+  flex-direction: row;
+  align-items: center;
   justify-content: flex-start;
   padding: 15px 50px;
 }
 #nav-background {
-  /* background-color: #7f50bf; */
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
 }
-
 @keyframes slideInLeft {
   from {
     transform: translateX(-100%);
@@ -92,14 +88,13 @@ nav {
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
-
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  flex: 1; /* Expand the ul element to take the available space */
+  flex: 1; /* Ekspanderer ul elementet for å ta opp resterende tilgjenglig rom */
   animation-name: slideInLeft;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
@@ -111,7 +106,7 @@ nav li {
 nav a {
   display: block;
   color: white;
-  text-decoration: none;
+  text-decoration: none; /* Fjerner understrek */
   padding: 10px;
   transition: background-color 0.5s ease;
 }
@@ -134,7 +129,7 @@ nav a:hover {
     padding-right: 10px;
   }
 }
-/* Seksjon "hero-section-kontainer" Start */
+/* Seksjon "hero-section-kontainer" Start - kodet av Tobias Schøyen*/
 .hero-section-kontainer {
   display: flex;
   flex-direction: column;
@@ -142,7 +137,7 @@ nav a:hover {
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  height: 100vh; /* Replace with the actual height of the background image */
+  height: 100vh;
 }
 .hero-title {
   color: #fff;
@@ -167,8 +162,8 @@ nav a:hover {
     color: #ffffff;
   }
 }
-/* Seksjon "hero-section-kontainer" slutt */
-/* Seksjon "main-features" Start */
+/* Seksjon "hero-section-kontainer" slutt - kodet av Tobias Schøyen */
+/* Seksjon "main-features" Start - kodet av Tobias Schøyen */
 .main-features {
   display: flex;
   padding: 40px 10px;
@@ -185,124 +180,126 @@ nav a:hover {
   flex-wrap: wrap;
   width: 100%;
 }
-/* Flipkort egenskaper Start
-    Flipkortenes struktur er inspirert av 
-    https://www.youtube.com/watch?v=NCLdf661ILE&t=6s*/
-.flipcard-container {
-  width: 350px;
-  height: 350px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 40px;
-  perspective: 800px; /* Unngår at rotasjonen komprimerer bildet, mer 3D effekt */
-}
-.flipcard {
-  width: 100%; /* kaskade effekt, følger .drømmekort-konteiners størrelse */
-  height: 100%; /* kaskade effekt, følger .drømmekort-konteiners størrelse */
-  position: relative;
-  transition: transform 1500ms;
-  transform-style: preserve-3d; /* Behandler kortet som 3D elementer for en bedre animasjon */
-}
-.flipcard-container:hover > .flipcard /* Hindrer rotatsjonen repterer ved å flytte musepeker inn og ut */ {
-  cursor: pointer; /* Endrer pekeren til en hånd med en pekende finger */
-  transform: rotateY(180deg);
-}
-.front,
-.back {
-  width: 100%;
-  height: 100%;
-  border-radius: 2rem; /* Runde kanter */
-  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0);
-  position: absolute;
-  backface-visibility: hidden; /* gjemmer baksiden av kortet */
-}
-.front {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: flex-end; /* flytter h3 til bunnen på vertikal akse */
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.front::before /* pseudo-element for skyggelag på toppen av bildet */ {
-  content: ""; /* setter pseudo-element til ingenting, men nødvendig for å være et eget lag */
-  top: 0; /* posisjon på toppen */
-  left: 0; /* posisjon helt til venstre */
-  border-radius: 2rem; /* Runde kanter på skyggelaget */
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.504), rgba(0, 0, 0, 0));
-  /* Inspirert av 
-          [] https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
-          [] https://developer.mozilla.org/en-US/docs/Web/CSS/::before 
-          [] https://css-tricks.com/almanac/selectors/a/after-and-before/
-          [] https://css-tricks.com/almanac/selectors/a/after-and-before/
-          [] https://css-tricks.com/pseudo-class-selectors/
-          [] Kombinert kunnskap fra overnevnte kilder med copy.ai for å 
-            få forslag på sammensetning */
-}
-.front h3 /* Flytter h3 tittelen mer spesifikt */ {
-  position: absolute;
-  bottom: 20px;
-  left: 30px;
-  color: white;
-}
-.back {
-  background: linear-gradient(
-    to bottom,
-    rgba(100, 100, 100, 0.5) 0%,
-    rgb(255, 255, 255) 100%
-  );
-  transform: rotateY(180deg); /* rotere bakteksten til riktig retning */
-}
-.back p {
-  color: rgb(0, 0, 0);
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-  font-size: 16px;
-}
-@media screen and (max-width: 500px) /* Reduserer fontstørrelse når nettleser < 600px bred,
-  responsivt tiltak */ {
+  /* Flipkort egenskaper Start
+      Flipkortenes struktur er inspirert av 
+      https://www.youtube.com/watch?v=NCLdf661ILE&t=6s. 
+      Kodens struktur er hentet fra tidligere egenprodusert kode i arbeidskrav.
+      Modifisert klasser, bakgrunnsbilder og innhold */
+  .flipcard-container {
+    width: 350px;
+    height: 350px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    perspective: 800px; /* Unngår at rotasjonen komprimerer bildet, mer 3D effekt */
+  }
+  .flipcard {
+    width: 100%; /* kaskade effekt, følger .drømmekort-konteiners størrelse */
+    height: 100%; /* kaskade effekt, følger .drømmekort-konteiners størrelse */
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d; /* Behandler kortet som 3D elementer for en bedre animasjon */
+  }
+  .flipcard-container:hover > .flipcard /* Hindrer rotatsjonen repterer ved å flytte musepeker inn og ut */ {
+    cursor: pointer; /* Endrer pekeren til en hånd med en pekende finger */
+    transform: rotateY(180deg);
+  }
+  .front,
+  .back {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem; /* Runde kanter */
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0);
+    position: absolute;
+    backface-visibility: hidden; /* gjemmer baksiden av kortet */
+  }
+  .front {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end; /* flytter h3 til bunnen på vertikal akse */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .front::before /* pseudo-element for skyggelag på toppen av bildet */ {
+    content: ""; /* setter pseudo-element til ingenting, men nødvendig for å være et eget lag */
+    top: 0; /* posisjon på toppen */
+    left: 0; /* posisjon helt til venstre */
+    border-radius: 2rem; /* Runde kanter på skyggelaget */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.504), rgba(0, 0, 0, 0));
+    /* Inspirert av 
+            [] https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+            [] https://developer.mozilla.org/en-US/docs/Web/CSS/::before 
+            [] https://css-tricks.com/almanac/selectors/a/after-and-before/
+            [] https://css-tricks.com/almanac/selectors/a/after-and-before/
+            [] https://css-tricks.com/pseudo-class-selectors/
+            [] Kombinert kunnskap fra overnevnte kilder med copy.ai for å 
+              få forslag på sammensetning */
+  }
+  .front h3 /* Flytter h3 tittelen mer spesifikt */ {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: white;
+  }
+  .back {
+    background: linear-gradient(
+      to bottom,
+      rgba(100, 100, 100, 0.5) 0%,
+      rgb(255, 255, 255) 100%
+    );
+    transform: rotateY(180deg); /* rotere bakteksten til riktig retning */
+  }
   .back p {
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
     font-size: 16px;
   }
-  /* Inspirasjon fra copy.ai. Prompt "responsivt tiltak ved komprimering av nettleser*/
-}
-.back h3 {
-  color: rgb(0, 0, 0);
-  padding-left: 20px;
-  text-align: center;
-}
-.card-cta {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 20px;
-  background-color: #bf6b04;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
-}
-.card-cta:hover {
-  background-color: rgb(0, 0, 0);
-  color: #ffffff;
-}
-/* Flipkort egenskaper slutt */
-/* Flipkort forsidebilder Start */
-#flipcard-1 {
-  background-image: url("/images/flipcard-poker.jpg");
-}
-#flipcard-2 {
-  background-image: url("/images/flipcard-bryllupskapell.jpg");
-}
-#flipcard-3 {
-  background-image: url("/images/flipcard-shows.jpg");
-}
-/* Flipkort forsidebilder slutt */
-/* Seksjon "main-features" slutt */
-/* Seksjon "location" Start */
+  @media screen and (max-width: 500px) /* Reduserer fontstørrelse når nettleser < 600px bred,
+    responsivt tiltak */ {
+    .back p {
+      font-size: 16px;
+    }
+    /* Responsivt tiltak ved komprimering av nettleser*/
+  }
+  .back h3 {
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+    text-align: center;
+  }
+  .card-cta {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #bf6b04;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .card-cta:hover {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+  }
+  /* Flipkort forsidebilder start - kodet av Tobias Schøyen  */
+  #flipcard-1 {
+    background-image: url("/images/flipcard-poker.jpg");
+  }
+  #flipcard-2 {
+    background-image: url("/images/flipcard-bryllupskapell.jpg");
+  }
+  #flipcard-3 {
+    background-image: url("/images/flipcard-shows.jpg");
+  }
+  /* Flipkort forsidebilder slutt - kodet av Tobias Schøyen  */
+  /* Flipkort egenskaper slutt - kodet av Tobias Schøyen  */
+/* Seksjon "main-features" slutt - kodet av Tobias Schøyen */
+/* Seksjon "location" start - kodet av Tobias Schøyen  */
 .location,
 .general {
   display: flex;
@@ -805,8 +802,11 @@ nav a:hover {
   width: 15rem;
   display: block;
 }
-/* button basic styling & hover */
-/* Denne delen(Button styling) kodet av Elin */
+/* Button basic styling & hover */
+/* Button animasjon er inspirert av en blog. 
+https://inpa.tistory.com/entry/CSS-%F0%9F%92%8D-%EB%B2%84%ED%8A%BC-%EB%94%94%EC%9E%90%EC%9D%B8-%EB%AA%A8%EC%9D%8C#%EB%AC%B4%EB%82%9C%ED%95%9C_%EB%B2%84%ED%8A%BC_%EC%BB%AC%EB%A0%89%EC%85%98
+*/
+
 .btn {
   display: block;
   background-color: #bf6b04;
